@@ -38,11 +38,7 @@ angular.module('publicApp')
               }, {
                 opacity: 1,
                 y: 0
-              }, 0.06, '+=0', function() {
-                angular.element([eyebrow[0], largeBlock[0]])
-                  .addClass('distort');
-                scope.$apply();
-              })
+              }, 0.06)
             // rotate in call to action
             .fromTo(callToAction, 0.6, {
                 opacity: 0,
