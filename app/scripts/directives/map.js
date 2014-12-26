@@ -10,7 +10,7 @@ angular.module('publicApp')
   .directive('map', function () {
     return {
       restrict: 'C',
-      link: function postLink(scope, element, attrs) {
+      link: function postLink(scope, element) {
         element.text('this is the map directive');
       }
     };
