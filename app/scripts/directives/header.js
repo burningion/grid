@@ -12,7 +12,7 @@ angular.module('publicApp')
      * Module dependencies.
      */
 
-    var TimelineMax = $window.TimelineMax;
+    // var TimelineMax = $window.TimelineMax;
 
     return {
       restrict: 'C',
