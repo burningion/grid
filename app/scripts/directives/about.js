@@ -23,32 +23,31 @@ angular.module('publicApp')
 
         function animateAbout() {
           // initialize timeline and retrieve elements to animate
-          var tl           = new TimelineMax();
-          var eyebrow      = element[0].getElementsByClassName('eyebrow');
-          var largeBlock   = element[0].getElementsByClassName('large-block');
-          var small        = element[0].getElementsByTagName('small');
-          var callToAction = element[0].getElementsByClassName('btn');
+          var tl      = new TimelineMax();
+          var h1      = element[0].getElementsByTagName('h1');
+          var small   = element[0].getElementsByTagName('small');
+          var members = element[0].getElementsByClassName('list-group-item');
           tl
             // wait for main to stagger in
             .delay(0.15)
             // fade in and slide down header
-            .staggerFromTo([eyebrow, largeBlock, small], 0.4, {
+            .staggerFromTo([h1, small], 0.4, {
                 opacity: 0,
                 y: -18
               }, {
                 opacity: 1,
                 y: 0
               }, 0.06)
-            // rotate in call to action
-            .fromTo(callToAction, 0.6, {
+            // rotate in team members
+            .staggerFromTo(members, 0.6, {
                 opacity: 0,
                 rotationX: 90,
-                transformOrigin: '50% 50% -34.5px'
+                transformOrigin: '50% 50% -19.5px'
               }, {
                 opacity: 1,
                 rotationX: 0,
-                transformOrigin: '50% 50% -34.5px'
-              }, '-=0.4');
+                transformOrigin: '50% 50% -19.5px'
+              }, 0.06, '-=0.4');
         }
 
         /**
