@@ -51,6 +51,13 @@ angular.module('publicApp')
         }
 
         /**
+         * Initialize map.
+         */
+
+        function initializeMap() {
+        }
+
+        /**
          * Handle "initialize" event.
          */
 
@@ -59,9 +66,17 @@ angular.module('publicApp')
         } else {
           var remove = scope.$on('initialize', function() {
             remove();
+            initializeMap();
             requestAnimationFrame(animateAbout);
           });
         }
+
+        /**
+        * Handle "$destroy" event.
+        */
+
+        scope.$on('$destroy', function() {
+        });
       }
     };
   });
