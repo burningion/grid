@@ -75,14 +75,21 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          open: 'http://localhost:<%= connect.options.port %>',
+          open: 'http://localhost:<%= connect.options.port %>/planimeter',
           middleware: function (connect) {
             return [
               modRewrite(['^[^\\.]*$ /index.html [L]']),
-              connect.static('.tmp'),
               connect().use(
-                '/bower_components',
+                '/planimeter',
+                connect.static('.tmp')
+              ),
+              connect().use(
+                '/planimeter/bower_components',
                 connect.static('./bower_components')
+              ),
+              connect().use(
+                '/planimeter',
+                connect.static('./' + appConfig.app)
               ),
               connect.static(appConfig.app)
             ];
@@ -95,11 +102,18 @@ module.exports = function (grunt) {
           middleware: function (connect) {
             return [
               modRewrite(['^[^\\.]*$ /index.html [L]']),
-              connect.static('.tmp'),
+              connect().use(
+                '/planimeter',
+                connect.static('.tmp')
+              ),
               connect.static('test'),
               connect().use(
-                '/bower_components',
+                '/planimeter/bower_components',
                 connect.static('./bower_components')
+              ),
+              connect().use(
+                '/planimeter',
+                connect.static('./' + appConfig.app)
               ),
               connect.static(appConfig.app)
             ];

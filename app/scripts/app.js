@@ -10,9 +10,7 @@
  */
 angular
   .module('publicApp', [
-    'ngRoute',
-    'ui.odometer',
-    'scrollto'
+    'ngRoute'
   ])
 
   /**
@@ -26,14 +24,6 @@ angular
       })
       .when('/about', {
         redirectTo: '/'
-      })
-      .when('/wiwo', {
-        templateUrl: 'views/wiwo.html',
-        controller: 'WiwoCtrl'
-      })
-      .when('/portfolio', {
-        templateUrl: 'views/portfolio.html',
-        controller: 'PortfolioCtrl'
       })
       .when('/theme', {
         templateUrl: 'views/theme.html'
@@ -64,7 +54,8 @@ angular
     $provide.decorator('$controller', function ($location, $delegate) {
       return function(constructor, locals, later, indent) {
         function updateRouteName() {
-          var routeName = $location.path().replace('/', '');
+          var path      = $location.path() || '/';
+          var routeName = path.replace('/', '');
           if (routeName === '') {
          // routeName = 'main';
             routeName = 'about';
