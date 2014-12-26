@@ -7,7 +7,7 @@
  * # header
  */
 angular.module('publicApp')
-  .directive('header', function ($timeout, $window, $document) {
+  .directive('header', function ($timeout/*, $window, $document*/) {
     /**
      * Module dependencies.
      */
