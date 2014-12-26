@@ -6,9 +6,23 @@
   </head>
   <body>
     <section class="about fade">
-      <p class="lead">
-        This is the main view.
-      </p>
+      <h1>
+        Hello. We are Planimeter.<br>
+        <small>Game &amp; Engine Development<br>
+        UI/UX Design</small>
+      </h1>
+      <div class="col-sm-4 list-group">
+        <a class="list-group-item member"
+           data-ng-repeat="member in team"
+           data-latlng="{{member.latlng}}">
+          <h4>
+            {{member.name}}
+          </h4>
+          <p>
+            {{member.role}}
+          </p>
+        </a>
+      </div>
     </section>
   </body>
 </html>
