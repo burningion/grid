@@ -51,9 +51,7 @@ angular.module('publicApp')
 
           scope.$watch(function() {
             return element.attr('class');
-          }, function() {
-            requestAnimationFrame(update);
-          });
+          }, update);
         });
       }
     };
