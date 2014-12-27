@@ -1,4 +1,4 @@
-/planimeter [![Build Status](https://travis-ci.org/Planimeter/planimeter.svg)](https://travis-ci.org/Planimeter/planimeter)
-===========
+/grid [![Build Status](https://travis-ci.org/andrewmcwatters/grid.svg)](https://travis-ci.org/andrewmcwatters/grid)
+=====
 
-/planimeter
+/grid
