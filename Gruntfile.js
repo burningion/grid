@@ -360,8 +360,7 @@ module.exports = function (grunt) {
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
             'fonts/{,*/}*.*',
-            '*.pdf',
-            'downloads/{,*/}*.*'
+            'scripts/DOMOverlay.js'
           ]
         }, {
           expand: true,
