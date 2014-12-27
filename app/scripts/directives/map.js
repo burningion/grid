@@ -9,8 +9,8 @@
 angular.module('publicApp')
   .directive('map', function ($window) {
     /**
-    * Module dependencies.
-    */
+     * Module dependencies.
+     */
 
     var $     = $window.jQuery;
     var async = $window.async;
