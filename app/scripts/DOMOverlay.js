@@ -8,9 +8,6 @@
 'use strict';
 
 var google = window.google;
-if (!google) {
-    return;
-}
 
 function DOMOverlay() {
     this.elements_ = null;
