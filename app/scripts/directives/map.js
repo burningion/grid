@@ -105,7 +105,7 @@ angular.module('publicApp')
         async.series([
           getScriptSeries('//maps.googleapis.com/maps/api/js?libraries=weather&callback=initializeMap'),
           createAPICallback('initializeMap'),
-          getScriptSeries('scripts/DOMOverlay.js')
+          getScriptSeries('scripts/DOMOverlay.748df9c5.js')
         ], function() {
           initializeMap();
         });
