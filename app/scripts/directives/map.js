@@ -76,6 +76,26 @@ angular.module('publicApp')
             var cloudLayer = new google.maps.weather.CloudLayer();
             cloudLayer.setMap(map);
           }
+
+          $window.map     = map;
+          $window.overlay = overlay;
+
+          google.maps.event.addDomListener($window, 'resize', resize);
+        }
+
+        function resize() {
+          var google = $window.google;
+          var center = new google.maps.LatLng(33.6054149, -112.125051);
+
+          requestAnimationFrame(function() {
+            $window.map.panTo(center);
+
+            if ($window.matchMedia('(min-width: 1200px)').matches) {
+              $window.map.setZoom(4);
+            } else {
+              $window.map.setZoom(3);
+            }
+          });
         }
 
         /**
@@ -108,6 +128,18 @@ angular.module('publicApp')
           getScriptSeries('scripts/DOMOverlay.748df9c5.js')
         ], function() {
           initializeMap();
+        });
+
+        /**
+         * Handle "$destroy" event.
+         */
+
+        scope.$on('$destroy', function() {
+          var google = $window.google;
+          google.maps.event.clearInstanceListeners($window);
+
+          $window.map     = null;
+          $window.overlay = null;
         });
       }
     };
