@@ -7,7 +7,7 @@
  * # about
  */
 angular.module('publicApp')
-  .directive('about', function ($window, $rootScope) {
+  .directive('about', function ($window, $compile, $rootScope) {
     /**
      * Module dependencies.
      */
@@ -55,6 +55,9 @@ angular.module('publicApp')
          */
 
         function initializeMap() {
+          var map = angular.element('<div id="map" class="map"></div>');
+          angular.element('body').prepend(map);
+          $compile(map)(element.scope());
         }
 
         /**
@@ -76,6 +79,7 @@ angular.module('publicApp')
         */
 
         scope.$on('$destroy', function() {
+          angular.element('#map').remove();
         });
       }
     };
