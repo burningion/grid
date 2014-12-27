@@ -1,0 +1,17 @@
+//
+// Team Member Marker
+// --------------------------------------------------
+
+
+// Base class
+.marker-team-member {
+  border: 2px solid $white;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 9px;
+  margin-left: -4.5px;
+  margin-top: -4.5px;
+  position: absolute;
+  width: 9px;
+}

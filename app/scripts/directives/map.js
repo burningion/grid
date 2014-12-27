@@ -71,17 +71,28 @@ angular.module('publicApp')
           map.setMapTypeId('Planimeter');
 
           overlay = new DOMOverlay();
+          overlay.setMap(map);
 
           if (google.maps.weather) {
             var cloudLayer = new google.maps.weather.CloudLayer();
             cloudLayer.setMap(map);
           }
 
+          // expose interfaces
           $window.map     = map;
           $window.overlay = overlay;
 
+          // broadcast "mapLoaded" event
+          scope.$broadcast('mapLoaded');
+
+          // add resize dom listener
+          resize();
           google.maps.event.addDomListener($window, 'resize', resize);
         }
+
+        /**
+         * Handle "resize" events.
+         */
 
         function resize() {
           var google = $window.google;
@@ -125,6 +136,7 @@ angular.module('publicApp')
         async.series([
           getScriptSeries('//maps.googleapis.com/maps/api/js?libraries=weather&callback=initializeMap'),
           createAPICallback('initializeMap'),
+          // getScriptSeries('scripts/DOMOverlay.js')
           getScriptSeries('scripts/DOMOverlay.748df9c5.js')
         ], function() {
           initializeMap();
