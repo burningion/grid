@@ -14,4 +14,8 @@
   margin-top: -4.5px;
   position: absolute;
   width: 9px;
+
+  &.active {
+    border-color: $gold;
+  }
 }

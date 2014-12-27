@@ -9,6 +9,10 @@
  */
 angular.module('publicApp')
   .controller('MainCtrl', function ($scope) {
+    /**
+     * Team members.
+     */
+
     $scope.team = [
       {
         name:   'Davlyn Hafaiedh',
@@ -31,4 +35,19 @@ angular.module('publicApp')
         latlng: '53.3957166,-1.4994561'
       }
     ];
+
+    /**
+     * Focused member.
+     */
+
+    $scope.focusedMember = $scope.team[0];
+
+    /**
+     * Focus on a team member.
+     */
+
+    $scope.focus = function(member) {
+      $scope.focusedMember = member;
+      $scope.$apply();
+    };
   });

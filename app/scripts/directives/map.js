@@ -24,7 +24,7 @@ angular.module('publicApp')
 
         function initializeMap() {
           var google     = $window.google;
-          var center     = new google.maps.LatLng(33.6054149, -112.125051);
+          var center     = new google.maps.LatLng(50.501079, 4.4764595);
           var map;
           var DOMOverlay = $window.DOMOverlay;
           var overlay;
@@ -96,7 +96,8 @@ angular.module('publicApp')
 
         function resize() {
           var google = $window.google;
-          var center = new google.maps.LatLng(33.6054149, -112.125051);
+          var center = $window.map.center ||
+                       new google.maps.LatLng(50.501079, 4.4764595);
 
           requestAnimationFrame(function() {
             $window.map.panTo(center);
