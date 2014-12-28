@@ -7,7 +7,7 @@
  * # about
  */
 angular.module('publicApp')
-  .directive('about', function ($window, $compile, $rootScope) {
+  .directive('about', function ($window, $document, $rootScope) {
     /**
      * Module dependencies.
      */
@@ -28,6 +28,7 @@ angular.module('publicApp')
           var small = element[0].getElementsByTagName('small');
           var p     = element[0].getElementsByTagName('p');
           var btn   = element[0].getElementsByClassName('btn');
+          var right = $document[0].getElementById('right');
           tl
             // wait for main to stagger in
             .delay(0.15)
@@ -48,7 +49,15 @@ angular.module('publicApp')
                 opacity: 1,
                 rotationX: 0,
                 transformOrigin: '50% 50% -23.5px'
-              }, 0.06, '-=0.4');
+              }, 0.06, '-=0.4')
+            // slide right in
+            .fromTo(right, 0.6, {
+                opacity: 0,
+                x: 18
+              }, {
+                opacity: 1,
+                x: 0
+              }, '-=0.6');
         }
 
         /**
