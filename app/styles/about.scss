@@ -36,14 +36,15 @@
     margin-top: $line-height-computed;
   }
 
-  .lead {
-    margin-bottom: 0;
-  }
-
   a {
     transition-property: background-color,
                          border-color,
                          color;
+  }
+
+  .col-md-6:last-of-type {
+    margin-top: -3px;
+    padding-left: 0;
   }
 }
 

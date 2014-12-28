@@ -19,7 +19,7 @@ angular.module('publicApp')
           var routeName = $location.path();
           var link      = element.find('a');
           var href      = link.attr('href') || '';
-          if (routeName === href.replace('/planimeter', '')) {
+          if (routeName === href.replace('/grid', '')) {
             // set active nav link
             element.addClass('active');
 

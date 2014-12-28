@@ -6,20 +6,25 @@
   </head>
   <body>
     <section class="about fade">
-      <h1>
-        Hello. We are Planimeter.<br>
-        <small>Game &amp; Engine Development<br>
-        UI/UX Design</small>
-      </h1>
-      <div class="col-sm-4 col-md-3 col-lg-2 list-group">
-        <a href
-           class="list-group-item team-member"
-           data-ng-repeat="member in team"
-           data-latlng="{{member.latlng}}"
-           data-ng-class="{'active': focusedMember === member}"
-           data-ng-click="focus(member)">
-          {{member.name}}
-        </a>
+      <div class="row">
+        <div class="col-md-6">
+          <h1>
+            Grid<br>
+            <small>Lightweight, fast, &amp;
+            <a class="love project" href="http://love2d.org/">LÖVE</a>-ly.</small>
+          </h1>
+          <p class="lead">
+            Grid is a 2D game engine built by
+            <a class="project" href="/planimeter">Planimeter</a>.<br>It was
+            designed for our fantasy MMORPG,
+            <a class="project" href="/vadventure">Vertex Adventure</a>.
+          </p>
+          <a class="btn btn-primary btn-lg" href="https://github.com/andrewmcwatters/grid-sdk">Fork me on GitHub</a>
+          </p>
+        </div>
+        <div class="hidden-xs hidden-sm col-md-6 text-right">
+          <a href="../images/grid_engine.png"><img src="../images/grid_engine.png" width="879"></a>
+        </div>
       </div>
     </section>
   </body>

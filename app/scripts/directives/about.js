@@ -51,16 +51,6 @@ angular.module('publicApp')
         }
 
         /**
-         * Initialize map.
-         */
-
-        function initializeMap() {
-          var map = angular.element('<div id="map" class="map"></div>');
-          angular.element('body').prepend(map);
-          $compile(map)(element.scope());
-        }
-
-        /**
          * Handle "initialize" event.
          */
 
@@ -69,7 +59,6 @@ angular.module('publicApp')
         } else {
           var remove = scope.$on('initialize', function() {
             remove();
-            initializeMap();
             requestAnimationFrame(animateAbout);
           });
         }

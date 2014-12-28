@@ -72,6 +72,11 @@ body {
   }
 }
 
+.grid.background {
+  background-image: url('../images/grid.png');
+  background-position: left top;
+}
+
 main {
   display: flex !important;
   flex: 1;
