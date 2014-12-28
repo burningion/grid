@@ -32,6 +32,10 @@ angular
       .when('/404', {
         templateUrl: 'views/404.html'
       })
+      .when('/api', {
+        templateUrl: 'views/api.html',
+        controller: 'ApiCtrl'
+      })
       .otherwise({
         redirectTo: '/404'
       });
