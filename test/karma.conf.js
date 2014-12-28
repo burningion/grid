@@ -35,9 +35,7 @@ module.exports = function(config) {
     ],
 
     // list of files / patterns to exclude
-    exclude: [
-      'app/scripts/DOMOverlay.js'
-    ],
+    exclude: [],
 
     // web server port
     port: 8080,
