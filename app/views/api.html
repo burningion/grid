@@ -5,10 +5,13 @@
     <title>404</title>
   </head>
   <body>
-    <section class="fade">
-      <p class="lead">
+    <section class="fade row">
+      <div data-marked data-ng-include="'docs/_Sidebar.md'"
+           class="hidden-print hidden-xs hidden-sm col-md-3">
+      </div>
+      <div data-marked class="col-xs-12 col-md-9" role="main">
         This is the api view.
-      </p>
+      </div>
     </section>
   </body>
 </html>
