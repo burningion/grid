@@ -29,6 +29,8 @@ module.exports = function(config) {
       'bower_components/odometer/odometer.js',
       'bower_components/angular-odometer-js/dist/angular-odometer.js',
       'bower_components/angular-scrollto/angular-scrollto.js',
+      'bower_components/marked/lib/marked.js',
+      'bower_components/angular-marked/angular-marked.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js'
