@@ -32,7 +32,7 @@ angular
       .when('/404', {
         templateUrl: 'views/404.html'
       })
-      .when('/api', {
+      .when('/api/:article?/', {
         templateUrl: 'views/api.html',
         controller: 'ApiCtrl'
       })

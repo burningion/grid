@@ -1,5 +1,5 @@
 **Classes**
-* [axisuser](api/api/axisuser)
+* [axisuser](api/axisuser)
 * [color](api/color)
 * [concommand](api/concommand)
 * [convar](api/convar)
