@@ -10,6 +10,33 @@
 angular.module('publicApp')
   .controller('ApiCtrl', function ($scope, marked, $http, $routeParams) {
     /**
+     * Override renderer methods.
+     */
+
+    var renderer = new marked.Renderer();
+
+    renderer.heading = function (text, level) {
+      var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
+
+      return (level === 1 ? '<div class="page-header">' : '') +
+        '<h' + level + '>' +
+          '<a name="' + escapedText + '" ' +
+            'class="anchor" ' +
+            'href="#' + escapedText + '"><span class="header-link"></span>' +
+          '</a>' +
+          text +
+        '</h' + level + '>' +
+      (level === 1 ? '</div>' : '');
+    };
+
+    renderer.table = function(header, body) {
+      return '<table class="table">' +
+        header +
+        body +
+      '</table>';
+    };
+
+    /**
      * Retrieve an article.
      */
 
@@ -20,10 +47,10 @@ angular.module('publicApp')
 
       $http.get('docs/' + article + '.md').
         success(function(markdown) {
-          $scope.article = markdown;
+          $scope.article = marked(markdown, { renderer: renderer });
         }).
-        error(function(markdown) {
-          $scope.article = markdown;
+        error(function() {
+          $scope.article = marked('Cannot GET /grid/docs/' + article + '.md');
         });
     });
   });

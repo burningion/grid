@@ -1,7 +1,5 @@
-player
+player <small>_Inherits from [`entity`](api/entity)_</small>
 ======
-
-<small>_Inherits from [`entity`](api/entity)_</small>
 
 Class Methods
 -------------

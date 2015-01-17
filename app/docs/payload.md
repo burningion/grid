@@ -1,7 +1,5 @@
-payload
+payload <small>_Inherits from [`typelenvalues`](api/typelenvalues)_</small>
 =======
-
-<small>_Inherits from [`typelenvalues`](api/typelenvalues)_</small>
 
 A network payload. This class is used to generate compact payloads, so you don't
 have to write binary data manually and send it to players yourself.

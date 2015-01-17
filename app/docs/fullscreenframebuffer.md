@@ -1,7 +1,5 @@
-fullscreenframebuffer
+fullscreenframebuffer <small>_Inherits from [`framebuffer`](api/framebuffer)_</small>
 =====================
-
-<small>_Inherits from [`framebuffer`](api/framebuffer)_</small>
 
 A convenience class to create a framebuffer that covers the entire viewport
 
