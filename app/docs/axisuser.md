@@ -1,24 +1,24 @@
 axisuser
 ========
 
-An [Axis](/axis) user
+An [Axis](api/axis) user
 
 Constructor
 -----------
 
-* [`axisuser()`](axisuser.axisuser)
+* [`axisuser()`](api/axisuser.axisuser)
 
 Methods
 -------
 
-* [`axisuser:downloadAvatar()`](axisuser.downloadAvatar)
-* [`axisuser:getAvatarImage()`](axisuser.getAvatarImage)
-* [`axisuser:getUsername()`](axisuser.getUsername)
-* [`axisuser:getEmail()`](axisuser.getEmail)
-* [`axisuser:getEmailHash()`](axisuser.getEmailHash)
-* [`axisuser:getTicket()`](axisuser.getTicket)
+* [`axisuser:downloadAvatar()`](api/axisuser.downloadAvatar)
+* [`axisuser:getAvatarImage()`](api/axisuser.getAvatarImage)
+* [`axisuser:getUsername()`](api/axisuser.getUsername)
+* [`axisuser:getEmail()`](api/axisuser.getEmail)
+* [`axisuser:getEmailHash()`](api/axisuser.getEmailHash)
+* [`axisuser:getTicket()`](api/axisuser.getTicket)
 
 Metamethods
 -----------
 
-* [`axisuser:__tostring()`](axisuser.__tostring)
+* [`axisuser:__tostring()`](api/axisuser.__tostring)

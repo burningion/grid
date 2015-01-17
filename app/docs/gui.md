@@ -4,34 +4,34 @@ gui
 Methods
 -------
 
-* [`gui.initialize()`](gui.initialize)
-* [`gui.invalidateTree()`](gui.invalidateTree)
-* [`gui.draw()`](gui.draw)
-* [`gui.register()`](gui.register)
-* [`gui.setFocusedPanel()`](gui.setFocusedPanel)
-* [`gui.updateMouseOver()`](gui.updateMouseOver)
+* [`gui.initialize()`](api/gui.initialize)
+* [`gui.invalidateTree()`](api/gui.invalidateTree)
+* [`gui.draw()`](api/gui.draw)
+* [`gui.register()`](api/gui.register)
+* [`gui.setFocusedPanel()`](api/gui.setFocusedPanel)
+* [`gui.updateMouseOver()`](api/gui.updateMouseOver)
 
 Members
 -------
 
-* [`gui.zIteration`](gui.zIteration)
-* [`gui.focusedPanel`](gui.focusedPanel)
+* [`gui.zIteration`](api/gui.zIteration)
+* [`gui.focusedPanel`](api/gui.focusedPanel)
 
 Callbacks
 ---------
 
-* [`gui.joystickpressed()`](gui.joystickpressed)
-* [`gui.joystickreleased()`](gui.joystickreleased)
-* [`gui.textinput()`](gui.textinput)
-* [`gui.keypressed()`](gui.keypressed)
-* [`gui.keyreleased()`](gui.keyreleased)
-* [`gui.mousepressed()`](gui.mousepressed)
-* [`gui.mousereleased()`](gui.mousereleased)
-* [`gui.update()`](gui.update)
+* [`gui.joystickpressed()`](api/gui.joystickpressed)
+* [`gui.joystickreleased()`](api/gui.joystickreleased)
+* [`gui.textinput()`](api/gui.textinput)
+* [`gui.keypressed()`](api/gui.keypressed)
+* [`gui.keyreleased()`](api/gui.keyreleased)
+* [`gui.mousepressed()`](api/gui.mousepressed)
+* [`gui.mousereleased()`](api/gui.mousereleased)
+* [`gui.update()`](api/gui.update)
 
 Related Globals
 ---------------
 
-* [`_G.g_RootPanel`](_G.g_RootPanel)
-* [`_G.g_MainMenu`](_G.g_MainMenu)
-* [`_G.g_Console`](_G.g_Console)
+* [`_G.g_RootPanel`](api/_G.g_RootPanel)
+* [`_G.g_MainMenu`](api/_G.g_MainMenu)
+* [`_G.g_Console`](api/_G.g_Console)

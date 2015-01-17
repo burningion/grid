@@ -4,20 +4,20 @@ sprite
 Constructor
 -----------
 
-* [`sprite()`](sprite.sprite)
+* [`sprite()`](api/sprite.sprite)
 
 Methods
 -------
 
-* [`sprite:draw()`](sprite.draw)
-* [`sprite:getSpriteSheet()`](sprite.getSpriteSheet)
-* [`sprite:getWidth()`](sprite.getWidth)
-* [`sprite:getHeight()`](sprite.getHeight)
-* [`sprite:setSpriteSheet()`](sprite.setSpriteSheet)
-* [`sprite:setWidth()`](sprite.setWidth)
-* [`sprite:setHeight()`](sprite.setHeight)
+* [`sprite:draw()`](api/sprite.draw)
+* [`sprite:getSpriteSheet()`](api/sprite.getSpriteSheet)
+* [`sprite:getWidth()`](api/sprite.getWidth)
+* [`sprite:getHeight()`](api/sprite.getHeight)
+* [`sprite:setSpriteSheet()`](api/sprite.setSpriteSheet)
+* [`sprite:setWidth()`](api/sprite.setWidth)
+* [`sprite:setHeight()`](api/sprite.setHeight)
 
 Metamethods
 -----------
 
-* [`sprite:__tostring()`](sprite.__tostring)
+* [`sprite:__tostring()`](api/sprite.__tostring)

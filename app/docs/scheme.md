@@ -6,22 +6,22 @@ A color scheme for Grid's GUI
 Class Members
 -------------
 
-* [`scheme.schemes`](scheme.schemes)
+* [`scheme.schemes`](api/scheme.schemes)
 
 Class Methods
 -------------
 
-* [`scheme.clear()`](scheme.clear)
-* [`scheme.getProperty()`](scheme.getProperty)
-* [`scheme.isLoaded()`](scheme.isLoaded)
-* [`scheme.load()`](scheme.load)
+* [`scheme.clear()`](api/scheme.clear)
+* [`scheme.getProperty()`](api/scheme.getProperty)
+* [`scheme.isLoaded()`](api/scheme.isLoaded)
+* [`scheme.load()`](api/scheme.load)
 
 Constructor
 -----------
 
-* [`scheme:scheme()`](scheme.scheme)
+* [`scheme:scheme()`](api/scheme.scheme)
 
 Metamethods
 -----------
 
-* [`scheme:__tostring()`](scheme.__tostring)
+* [`scheme:__tostring()`](api/scheme.__tostring)

@@ -1,7 +1,7 @@
 payload
 =======
 
-<small>_Inherits from [`typelenvalues`](typelenvalues)_</small>
+<small>_Inherits from [`typelenvalues`](api/typelenvalues)_</small>
 
 A network payload. This class is used to generate compact payloads, so you don't
 have to write binary data manually and send it to players yourself.
@@ -9,22 +9,22 @@ have to write binary data manually and send it to players yourself.
 Class Members
 -------------
 
-* [`payload.handlers`](payload.handlers)
+* [`payload.handlers`](api/payload.handlers)
 
 Class Methods
 -------------
 
-* [`payload.initializeFromData()`](payload.initializeFromData)
-* [`payload.setHandler()`](payload.setHandler)
+* [`payload.initializeFromData()`](api/payload.initializeFromData)
+* [`payload.setHandler()`](api/payload.setHandler)
 
 Constructor
 -----------
 
-* [`payload()`](payload.payload)
+* [`payload()`](api/payload.payload)
 
 Methods
 -------
 
-* [`payload:dispatchToHandler()`](payload.dispatchToHandler)
-* [`payload:getPeer()`](payload.getPeer)
-* [`payload:setPeer()`](payload.setPeer)
+* [`payload:dispatchToHandler()`](api/payload.dispatchToHandler)
+* [`payload:getPeer()`](api/payload.getPeer)
+* [`payload:setPeer()`](api/payload.setPeer)

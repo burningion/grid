@@ -6,47 +6,47 @@ A console variable
 Class Members
 -------------
 
-* [`convar.config`](convar.config)
-* [`convar.convars`](convar.convars)
+* [`convar.config`](api/convar.config)
+* [`convar.convars`](api/convar.convars)
 
 Class Methods
 -------------
 
-* [`convar.getConfig()`](convar.getConfig)
-* [`convar.getConvar()`](convar.getConvar)
-* [`convar.setConvar()`](convar.setConvar)
-* [`convar.readConfig()`](convar.readConfig)
-* [`convar.saveConfig()`](convar.saveConfig)
+* [`convar.getConfig()`](api/convar.getConfig)
+* [`convar.getConvar()`](api/convar.getConvar)
+* [`convar.setConvar()`](api/convar.setConvar)
+* [`convar.readConfig()`](api/convar.readConfig)
+* [`convar.saveConfig()`](api/convar.saveConfig)
 
 Constructor
 -----------
 
-* [`convar()`](convar.convar)
+* [`convar()`](api/convar.convar)
 
 Methods
 -------
 
-* [`convar:getBoolean()`](convar.getBoolean)
-* [`convar:getDefault()`](convar.getDefault)
-* [`convar:getHelpString()`](convar.getHelpString)
-* [`convar:getMin()`](convar.getMin)
-* [`convar:getMax()`](convar.getMax)
-* [`convar:getName()`](convar.getName)
-* [`convar:getNumber()`](convar.getNumber)
-* [`convar:getValue()`](convar.getValue)
-* [`convar:remove()`](convar.remove)
-* [`convar:setDefault()`](convar.setDefault)
-* [`convar:setMin()`](convar.setMin)
-* [`convar:setMax()`](convar.setMax)
-* [`convar:setHelpString()`](convar.setHelpString)
-* [`convar:setValue()`](convar.setValue)
+* [`convar:getBoolean()`](api/convar.getBoolean)
+* [`convar:getDefault()`](api/convar.getDefault)
+* [`convar:getHelpString()`](api/convar.getHelpString)
+* [`convar:getMin()`](api/convar.getMin)
+* [`convar:getMax()`](api/convar.getMax)
+* [`convar:getName()`](api/convar.getName)
+* [`convar:getNumber()`](api/convar.getNumber)
+* [`convar:getValue()`](api/convar.getValue)
+* [`convar:remove()`](api/convar.remove)
+* [`convar:setDefault()`](api/convar.setDefault)
+* [`convar:setMin()`](api/convar.setMin)
+* [`convar:setMax()`](api/convar.setMax)
+* [`convar:setHelpString()`](api/convar.setHelpString)
+* [`convar:setValue()`](api/convar.setValue)
 
 Callbacks
 ---------
 
-* [`convar:onValueChange()`](convar.onValueChange)
+* [`convar:onValueChange()`](api/convar.onValueChange)
 
 Metamethods
 -----------
 
-* [`convar:__tostring()`](convar.__tostring)
+* [`convar:__tostring()`](api/convar.__tostring)

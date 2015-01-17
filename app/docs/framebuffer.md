@@ -4,41 +4,41 @@ framebuffer
 Class Members
 -------------
 
-* [`framebuffer.framebuffers`](framebuffer.framebuffers)
-* [`framebuffer.renderStack`](framebuffer.renderStack)
+* [`framebuffer.framebuffers`](api/framebuffer.framebuffers)
+* [`framebuffer.renderStack`](api/framebuffer.renderStack)
 
 Class Methods
 -------------
 
-* [`framebuffer.invalidateFramebuffers()`](framebuffer.invalidateFramebuffers)
+* [`framebuffer.invalidateFramebuffers()`](api/framebuffer.invalidateFramebuffers)
 
 Constructor
 -----------
 
-* [`framebuffer()`](framebuffer.framebuffer)
+* [`framebuffer()`](api/framebuffer.framebuffer)
 
 Methods
 -------
 
-* [`framebuffer:clear()`](framebuffer.clear)
-* [`framebuffer:createFramebuffer()`](framebuffer:createFramebuffer)
-* [`framebuffer:draw()`](framebuffer.draw)
-* [`framebuffer:getDrawable()`](framebuffer.getDrawable)
-* [`framebuffer:getDesiredWidth()`](framebuffer.getDesiredWidth)
-* [`framebuffer:getDesiredHeight()`](framebuffer.getDesiredHeight)
-* [`framebuffer:getWidth()`](framebuffer.getWidth)
-* [`framebuffer:getHeight()`](framebuffer.getHeight)
-* [`framebuffer:invalidate()`](framebuffer.invalidate)
-* [`framebuffer:renderTo()`](framebuffer.renderTo)
-* [`framebuffer:setAutoRedraw()`](framebuffer.setAutoRedraw)
-* [`framebuffer:shouldAutoRedraw()`](framebuffer.shouldAutoRedraw)
+* [`framebuffer:clear()`](api/framebuffer.clear)
+* [`framebuffer:createFramebuffer()`](api/framebuffer:createFramebuffer)
+* [`framebuffer:draw()`](api/framebuffer.draw)
+* [`framebuffer:getDrawable()`](api/framebuffer.getDrawable)
+* [`framebuffer:getDesiredWidth()`](api/framebuffer.getDesiredWidth)
+* [`framebuffer:getDesiredHeight()`](api/framebuffer.getDesiredHeight)
+* [`framebuffer:getWidth()`](api/framebuffer.getWidth)
+* [`framebuffer:getHeight()`](api/framebuffer.getHeight)
+* [`framebuffer:invalidate()`](api/framebuffer.invalidate)
+* [`framebuffer:renderTo()`](api/framebuffer.renderTo)
+* [`framebuffer:setAutoRedraw()`](api/framebuffer.setAutoRedraw)
+* [`framebuffer:shouldAutoRedraw()`](api/framebuffer.shouldAutoRedraw)
 
 Metamethods
 -----------
 
-* [`framebuffer:__tostring()`](framebuffer.__tostring)
+* [`framebuffer:__tostring()`](api/framebuffer.__tostring)
 
 See Also
 --------
 
-* [`fullscreenframebuffer`](fullscreenframebuffer)
+* [`fullscreenframebuffer`](api/fullscreenframebuffer)

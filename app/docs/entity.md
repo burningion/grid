@@ -4,43 +4,43 @@ entity
 Class Members
 -------------
 
-* [`entity.entities`](entity.entities)
-* [`entity.lastEntIndex`](entity.lastEntIndex)
+* [`entity.entities`](api/entity.entities)
+* [`entity.lastEntIndex`](api/entity.lastEntIndex)
 
 Class Methods
 -------------
 
-* [`entity.drawAll()`](entity.drawAll)
-* [`entity.findByClassname()`](entity.findByClassname)
-* [`entity.getAll()`](entity.getAll)
+* [`entity.drawAll()`](api/entity.drawAll)
+* [`entity.findByClassname()`](api/entity.findByClassname)
+* [`entity.getAll()`](api/entity.getAll)
 
 Constructor
 -----------
 
-* [`entity()`](entity.entity)
+* [`entity()`](api/entity.entity)
 
 Methods
 -------
 
-* [`entity:getClassname()`](entity.getClassname)
-* [`entity:networkVar()`](entity.networkVar)
-* [`entity:networkBoolean()`](entity.networkBoolean)
-* [`entity:networkNumber()`](entity.networkNumber)
-* [`entity:networkString()`](entity.networkString)
-* [`entity:networkVector()`](entity.networkVector)
-* [`entity:setNetworkVar()`](entity.setNetworkVar)
-* [`entity:getNetworkVar()`](entity.getNetworkVar)
-* [`entity:getNetworkVarsStruct()`](entity.getNetworkVarsStruct)
-* [`entity:getNetworkVarTypeLenValues()`](entity.getNetworkVarTypeLenValues)
-* [`entity:remove()`](entity.remove)
-* [`entity:spawn()`](entity.spawn)
+* [`entity:getClassname()`](api/entity.getClassname)
+* [`entity:networkVar()`](api/entity.networkVar)
+* [`entity:networkBoolean()`](api/entity.networkBoolean)
+* [`entity:networkNumber()`](api/entity.networkNumber)
+* [`entity:networkString()`](api/entity.networkString)
+* [`entity:networkVector()`](api/entity.networkVector)
+* [`entity:setNetworkVar()`](api/entity.setNetworkVar)
+* [`entity:getNetworkVar()`](api/entity.getNetworkVar)
+* [`entity:getNetworkVarsStruct()`](api/entity.getNetworkVarsStruct)
+* [`entity:getNetworkVarTypeLenValues()`](api/entity.getNetworkVarTypeLenValues)
+* [`entity:remove()`](api/entity.remove)
+* [`entity:spawn()`](api/entity.spawn)
 
 Callbacks
 ---------
 
-* [`entity:onNetworkVarChanged()`](entity.onNetworkVarChanged)
+* [`entity:onNetworkVarChanged()`](api/entity.onNetworkVarChanged)
 
 Metamethods
 -----------
 
-* [`entity:__tostring()`](entity.__tostring)
+* [`entity:__tostring()`](api/entity.__tostring)

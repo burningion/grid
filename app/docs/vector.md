@@ -4,15 +4,15 @@ vector
 Constructor
 -----------
 
-* [`vector()`](vector.vector)
+* [`vector()`](api/vector.vector)
 
 Metamethods
 -----------
 
-* [`vector:__eq()`](vector.__eq)
-* [`vector:__tostring()`](vector.__tostring)
+* [`vector:__eq()`](api/vector.__eq)
+* [`vector:__tostring()`](api/vector.__tostring)
 
 Convenience Members
 -------------------
 
-* [`vector.origin`](vector.origin)
+* [`vector.origin`](api/vector.origin)

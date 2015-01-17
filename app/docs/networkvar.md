@@ -1,26 +1,26 @@
 networkvar
 ==========
 
-An [`entity`](entity) networked variable
+An [`entity`](api/entity) networked variable
 
 Constructor
 -----------
 
-* [`networkvar()`](networkvar.networkvar)
+* [`networkvar()`](api/networkvar.networkvar)
 
 Callbacks
 ---------
 
-* [`networkvar:onValueChanged()`](networkvar.onValueChanged)
+* [`networkvar:onValueChanged()`](api/networkvar.onValueChanged)
 
 Methods
 -------
 
-* [`networkvar:getName()`](networkvar.getName)
-* [`networkvar:getValue()`](networkvar.getValue)
-* [`networkvar:setValue()`](networkvar.setValue)
+* [`networkvar:getName()`](api/networkvar.getName)
+* [`networkvar:getValue()`](api/networkvar.getValue)
+* [`networkvar:setValue()`](api/networkvar.setValue)
 
 Metamethods
 -----------
 
-* [`networkvar:__tostring()`](networkvar.__tostring)
+* [`networkvar:__tostring()`](api/networkvar.__tostring)

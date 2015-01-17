@@ -20,10 +20,10 @@ angular.module('publicApp')
 
       $http.get('docs/' + article + '.md').
         success(function(markdown) {
-          $scope.article = marked(markdown);
+          $scope.article = markdown;
         }).
         error(function(markdown) {
-          $scope.article = marked(markdown);
+          $scope.article = markdown;
         });
     });
   });

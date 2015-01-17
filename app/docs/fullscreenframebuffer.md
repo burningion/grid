@@ -1,21 +1,21 @@
 fullscreenframebuffer
 =====================
 
-<small>_Inherits from [`framebuffer`](framebuffer)_</small>
+<small>_Inherits from [`framebuffer`](api/framebuffer)_</small>
 
 A convenience class to create a framebuffer that covers the entire viewport
 
 Constructor
 -----------
 
-* [`fullscreenframebuffer()`](fullscreenframebuffer.fullscreenframebuffer)
+* [`fullscreenframebuffer()`](api/fullscreenframebuffer.fullscreenframebuffer)
 
 Methods
 -------
 
-* [`fullscreenframebuffer:createFramebuffer()`](fullscreenframebuffer.createFramebuffer)
+* [`fullscreenframebuffer:createFramebuffer()`](api/fullscreenframebuffer.createFramebuffer)
 
 See Also
 --------
 
-* [`framebuffer`](framebuffer)
+* [`framebuffer`](api/framebuffer)
