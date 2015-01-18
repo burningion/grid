@@ -49,7 +49,6 @@ Callbacks
 | Server    | [`player:onAuthenticated()`](api/player.onAuthenticated) |
 |           | [`player:onConnect()`](api/player.onConnect)             |
 |           | [`player:onDisconnect()`](api/player.onDisconnect)       |
-|           | [`player:onDisconnect()`](api/player.onDisconnect)       |
 
 Metamethods
 -----------
