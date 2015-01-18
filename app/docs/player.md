@@ -18,8 +18,8 @@ Constructor
 Methods
 -------
 
-| Universe  | Methods                                                  |
-| --------- | -------------------------------------------------------- |
+| Universe  | Methods                                                      |
+| --------- | ------------------------------------------------------------ |
 | Server    | [`player:createInitialSave()`](api/player.createInitialSave) |
 |           | [`player:getAccount()`](api/player.getAccount)               |
 |           | [`player:draw()`](api/player.draw)                           |
@@ -44,8 +44,8 @@ Methods
 Callbacks
 ---------
 
-| Universe  | Callback                                             |
-| --------- | ---------------------------------------------------- |
+| Universe  | Callback                                                 |
+| --------- | -------------------------------------------------------- |
 | Server    | [`player:onAuthenticated()`](api/player.onAuthenticated) |
 |           | [`player:onConnect()`](api/player.onConnect)             |
 |           | [`player:onDisconnect()`](api/player.onDisconnect)       |
