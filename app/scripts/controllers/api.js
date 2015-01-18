@@ -53,4 +53,21 @@ angular.module('publicApp')
           $scope.article = marked('Cannot GET /grid/docs/' + article + '.md');
         });
     });
+
+    /**
+    * Watch "article" changes.
+    */
+
+    $scope.$watch('article', function(markdown) {
+      if (!markdown) {
+        return;
+      }
+
+      if (markdown.indexOf('<p>&lt;!DOCTYPE html&gt;') !== 0) {
+        return;
+      }
+
+      var article = $routeParams.article || 'Home';
+      $scope.article = marked('Cannot GET /grid/docs/' + article + '.md');
+    });
   });
