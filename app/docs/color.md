@@ -1,6 +1,8 @@
 color
 =====
 
+Color class
+
 Constructor
 -----------
 

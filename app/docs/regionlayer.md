@@ -1,6 +1,8 @@
 regionlayer
 ===========
 
+A layer of a [`region`](api/region)
+
 Constructor
 -----------
 

@@ -1,6 +1,8 @@
 framebuffer
 ===========
 
+Framebuffer class
+
 Class Members
 -------------
 

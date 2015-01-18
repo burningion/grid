@@ -1,6 +1,8 @@
 regiontileset
 =============
 
+A tileset of a [`region`](api/region)
+
 Constructor
 -----------
 

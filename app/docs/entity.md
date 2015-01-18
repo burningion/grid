@@ -1,6 +1,8 @@
 entity
 ======
 
+Entity class
+
 Class Members
 -------------
 

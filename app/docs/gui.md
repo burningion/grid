@@ -1,6 +1,8 @@
 gui
 ===
 
+GUI interface
+
 Methods
 -------
 

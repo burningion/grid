@@ -1,6 +1,8 @@
 vector
 ======
 
+Vector class
+
 Constructor
 -----------
 

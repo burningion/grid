@@ -1,6 +1,8 @@
 region
 ======
 
+Region class
+
 Class Members
 -------------
 

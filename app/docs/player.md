@@ -1,6 +1,8 @@
 player <small>_Inherits from [`entity`](api/entity)_</small>
 ======
 
+Player class
+
 Class Methods
 -------------
 

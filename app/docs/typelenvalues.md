@@ -1,6 +1,10 @@
 typelenvalues
 =============
 
+A serializable/deserializable
+[type-length-value](http://en.wikipedia.org/wiki/Type-length-value) class used
+for networking
+
 Class Methods
 -------------
 
