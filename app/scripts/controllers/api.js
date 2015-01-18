@@ -29,12 +29,23 @@ angular.module('publicApp')
       (level === 1 ? '</div>' : '');
     };
 
+    renderer.list = function(body, ordered) {
+      var tag = ordered ? 'ol' : 'ul';
+      return '<' + tag + ' class="list-unstyled">' +
+        body +
+      '</' + tag + '>';
+    };
+
     renderer.table = function(header, body) {
-      return '<table class="table">' +
+      return '<table class="table table-condensed">' +
         header +
         body +
       '</table>';
     };
+
+    marked.setOptions({
+      renderer: renderer
+    });
 
     /**
      * Retrieve an article.
@@ -47,7 +58,7 @@ angular.module('publicApp')
 
       $http.get('docs/' + article + '.md').
         success(function(markdown) {
-          $scope.article = marked(markdown, { renderer: renderer });
+          $scope.article = marked(markdown);
         }).
         error(function() {
           $scope.article = marked('Cannot GET /grid/docs/' + article + '.md');

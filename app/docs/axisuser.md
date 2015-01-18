@@ -1,7 +1,7 @@
 axisuser
 ========
 
-An [Axis](api/axis) user
+An [Axis](/axis) user
 
 Constructor
 -----------
