@@ -1,7 +1,7 @@
 color.white
 ===========
 
-A convenience method for `color(255, 255, 255, 1)`
+A convenience member for `color(255, 255, 255, 1)`
 
 See Also
 --------
