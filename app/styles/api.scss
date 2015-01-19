@@ -15,4 +15,13 @@
   .page-header > h1 {
     margin-top: 0;
   }
+
+  code {
+    display: inline-block;
+    margin: 2px 0;
+  }
+
+  .well p:last-of-type {
+    margin-bottom: 0;
+  }
 }
