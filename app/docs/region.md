@@ -29,7 +29,7 @@ Methods
 
 | Universe  | Methods                                                    |
 | --------- | ---------------------------------------------------------- |
-| Client    | [`region:draw()`](api/region.draw)                         |
+| *Client*  | [`region:draw()`](api/region.draw)                         |
 |           | [`region:getEntities()`](api/region.getEntities)           |
 |           | [`region:getFilename()`](api/region.getFilename)           |
 |           | [`region:getFormatVersion()`](api/region.getFormatVersion) |

@@ -21,6 +21,19 @@
     margin: 2px 0;
   }
 
+  .label-client,
+  .label-server {
+    margin: 2px 0;
+  }
+
+  .label-client {
+    background-color: rgba(168, 168, 123, 1);
+  }
+
+  .label-server {
+    background-color: rgba(123, 158, 168, 1);
+  }
+
   .well p:last-of-type {
     margin-bottom: 0;
   }

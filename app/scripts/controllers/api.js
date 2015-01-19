@@ -15,6 +15,10 @@ angular.module('publicApp')
 
     var renderer = new marked.Renderer();
 
+    /**
+     * Add page headers.
+     */
+
     renderer.heading = function (text, level) {
       var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
 
@@ -29,6 +33,10 @@ angular.module('publicApp')
       (level === 1 ? '</div>' : '');
     };
 
+    /**
+     * Make lists unstyled.
+     */
+
     renderer.list = function(body, ordered) {
       var tag = ordered ? 'ol' : 'ul';
       return '<' + tag + ' class="list-unstyled">' +
@@ -36,12 +44,36 @@ angular.module('publicApp')
       '</' + tag + '>';
     };
 
+    /**
+     * Add Bootstap tables.
+     */
+
     renderer.table = function(header, body) {
       return '<table class="table table-condensed">' +
         header +
         body +
       '</table>';
     };
+
+    /**
+     * Add client and server labels.
+     */
+
+    renderer.em = function(text) {
+      if (text === 'Client') {
+        return '<span class="label label-client">Client</span>';
+      }
+
+      if (text === 'Server') {
+        return '<span class="label label-server">Server</span>';
+      }
+
+      return '<em>' + text + '</em>';
+    };
+
+    /**
+     * Set marked options.
+     */
 
     marked.setOptions({
       renderer: renderer

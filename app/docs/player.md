@@ -22,7 +22,7 @@ Methods
 
 | Universe  | Methods                                                      |
 | --------- | ------------------------------------------------------------ |
-| Server    | [`player:createInitialSave()`](api/player.createInitialSave) |
+| *Server*  | [`player:createInitialSave()`](api/player.createInitialSave) |
 |           | [`player:getAccount()`](api/player.getAccount)               |
 |           | [`player:draw()`](api/player.draw)                           |
 |           | [`player:getName()`](api/player.getName)                     |
@@ -33,7 +33,7 @@ Methods
 |           | [`player:getViewportSize()`](api/player.getViewportSize)     |
 |           | [`player:initialSpawn()`](api/player.initialSpawn)           |
 |           | [`player:isAuthenticated()`](api/player.isAuthenticated)     |
-| Server    | [`player:kick()`](api/player.kick)                           |
+| *Server*  | [`player:kick()`](api/player.kick)                           |
 |           | [`player:send()`](api/player.send)                           |
 |           | [`player:setAuthenticated()`](api/player.setAuthenticated)   |
 |           | [`player:setRegion()`](api/player.setRegion)                 |
@@ -48,7 +48,7 @@ Callbacks
 
 | Universe  | Callback                                                 |
 | --------- | -------------------------------------------------------- |
-| Server    | [`player:onAuthenticated()`](api/player.onAuthenticated) |
+| *Server*  | [`player:onAuthenticated()`](api/player.onAuthenticated) |
 |           | [`player:onConnect()`](api/player.onConnect)             |
 |           | [`player:onDisconnect()`](api/player.onDisconnect)       |
 
