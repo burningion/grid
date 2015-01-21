@@ -8,7 +8,13 @@
  * Controller of the publicApp
  */
 angular.module('publicApp')
-  .controller('ApiCtrl', function ($scope, marked, $http, $routeParams) {
+  .controller('ApiCtrl', function ($window, marked, $scope, $routeParams, $http) {
+    /**
+     * Module dependencies.
+     */
+
+    var hljs = $window.hljs;
+
     /**
      * Override renderer methods.
      */
@@ -76,6 +82,9 @@ angular.module('publicApp')
      */
 
     marked.setOptions({
+      highlight: function(code) {
+        return hljs.highlightAuto(code).value;
+      },
       renderer: renderer
     });
 

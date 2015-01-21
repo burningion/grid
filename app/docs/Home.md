@@ -19,5 +19,5 @@ _Coming soon_
 
 ### Engine Documentation Index
 
-* [Client–Server Initialization](api/client–server-initialization)
-* [Game Loop](api/game-loop)
+* [Client–Server Initialization](api/Client–Server_Initialization)
+* [Game Loop](api/Game_Loop)
