@@ -1,7 +1,7 @@
 Grid API Documentation
 ======================
 
-Welcome to the Grid API documentation.
+Welcome to the **Grid API Documentation.**
 
 Here you'll find the Lua documentation for the Grid engine. Classes, hooks, and
 interfaces for game development have their references published here and are
@@ -13,4 +13,11 @@ of the engine [here on GitHub.](https://github.com/andrewmcwatters/grid-sdk)
 For other [Planimeter](/planimeter) projects, see our
 [organization page.](https://github.com/Planimeter)
 
-_Andrew_
+### Getting Started
+
+_Coming soon_
+
+### Engine Documentation Index
+
+* [Client–Server Initialization](api/client–server-initialization)
+* [Game Loop](api/game-loop)
