@@ -51,3 +51,39 @@ concommand( "region", "Loads the specified region",
 	end
 )
 ```
+
+Establishing a Connection
+-------------------------
+
+After making a call to either [engine.connect()](api/engine.connect) or
+[engine.connectToListenServer()](api/engine.connectToListenServer), Grid loads
+`engine.client.network` which then allows
+[network.connect()](api/network.connect) or [network.connectToListenServer()](api/network.connectToListenServer) to be
+called.
+
+Depending on which method is called, the engine will either use
+[lua-enet](http://leafo.net/lua-enet/) to connect to the server or emulate the
+network procedures in-memory.
+
+### Stack Trace <small>with console output</small>
+
+1. *Client* `self.joinLeaveUniverse.onClick()` or `concommand( "region", ... )`
+2. *Client* [engine.connect()](api/engine.connect) or
+[engine.connectToListenServer()](api/engine.connectToListenServer)
+  * > Connecting to *address:port*...'
+3. *Server* [engine.onConnect()](api/engine.onConnect)
+  * > *peer* has connected.
+4. *Client* [engine.onConnect()](api/engine.onConnect)
+  * > Connected to the server!
+5. *Client* `sendAuthTicket()`
+6. *Server*
+  * > Received payload "authenticate" from *peer*
+7. *Server* [engine.onPlayerAuthenticate()](api/engine.onPlayerAuthenticate)
+8. *Server* [engine.sendServerInfo()](api/engine.sendServerInfo)
+9. *Client* [engine.sendClientInfo()](api/engine.sendClientInfo)
+10. *Shared* [player:initialSpawn()](api/player.initialSpawn)
+
+See Also
+--------
+
+* [Game Loop](api/Game_Loop)

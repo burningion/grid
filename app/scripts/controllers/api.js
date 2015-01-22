@@ -45,7 +45,7 @@ angular.module('publicApp')
 
     renderer.list = function(body, ordered) {
       var tag = ordered ? 'ol' : 'ul';
-      return '<' + tag + ' class="list-unstyled">' +
+      return '<' + tag + (tag === 'ul' ? ' class="list-unstyled"' : '') + '>' +
         body +
       '</' + tag + '>';
     };
@@ -72,6 +72,10 @@ angular.module('publicApp')
 
       if (text === 'Server') {
         return '<span class="label label-server">Server</span>';
+      }
+
+      if (text === 'Shared') {
+        return '<span class="label label-shared">Shared</span>';
       }
 
       return '<em>' + text + '</em>';
