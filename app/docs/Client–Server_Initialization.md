@@ -67,10 +67,13 @@ network procedures in-memory.
 
 ### Stack Trace <small>with console output</small>
 
-1. *Client* `self.joinLeaveUniverse.onClick()` or `concommand( "region", ... )`
+1. Connect to server by:
+  * *Client* `self.joinLeaveUniverse.onClick()`
+  or
+  * *Client* `concommand( "region", ... )`
 2. *Client* [engine.connect()](api/engine.connect) or
 [engine.connectToListenServer()](api/engine.connectToListenServer)
-  * > Connecting to *address:port*...'
+  * > Connecting to *address:port*...
 3. *Server* [engine.onConnect()](api/engine.onConnect)
   * > *peer* has connected.
 4. *Client* [engine.onConnect()](api/engine.onConnect)
@@ -79,8 +82,13 @@ network procedures in-memory.
 6. *Server*
   * > Received payload "authenticate" from *peer*
 7. *Server* [engine.onPlayerAuthenticate()](api/engine.onPlayerAuthenticate)
+  * > Player *username* has joined the game.
 8. *Server* [engine.sendServerInfo()](api/engine.sendServerInfo)
+  * *Client*
+    * > Received payload "serverInfo"
 9. *Client* [engine.sendClientInfo()](api/engine.sendClientInfo)
+  * *Server*
+    * > Received payload "clientInfo" from *peer*
 10. *Shared* [player:initialSpawn()](api/player.initialSpawn)
 
 See Also
