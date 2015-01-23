@@ -42,7 +42,8 @@
                                       rgba(123, 158, 168, 1) 100%);
   }
 
-  .well p:last-of-type {
+  .well p:last-of-type,
+  .well ul:last-of-type {
     margin-bottom: 0;
   }
 }

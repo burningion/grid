@@ -20,17 +20,15 @@ In [Vertex Adventure,](/vadventure) the engine connects to the
 `game.client.gui.mainmenu`
 
 ```lua
-self.joinLeaveUniverse.onClick = function()
-	if ( not engine.isConnectedToServer() ) then
-		if ( _DEBUG ) then
-			engine.connect( "localhost" )
-		else
-			-- TODO: Update this to use a universe browser.
-			engine.connect( "newton.andrewmcwatters.com" )
-		end
+if ( not engine.isConnectedToServer() ) then
+	if ( _DEBUG ) then
+		engine.connect( "localhost" )
 	else
-		engine.disconnect()
+		-- TODO: Update this to use a universe browser.
+		engine.connect( "newton.andrewmcwatters.com" )
 	end
+else
+	engine.disconnect()
 end
 ```
 
@@ -67,10 +65,10 @@ network procedures in-memory.
 
 ### Stack Trace <small>with console output</small>
 
-1. Connect to server by:
-  * *Client* `self.joinLeaveUniverse.onClick()`
+1. Connect to server in:
+  * *Client* `game.client.gui.mainmenu`
   or
-  * *Client* `concommand( "region", ... )`
+  * *Client* `engine.shared.region`
 2. *Client* [engine.connect()](api/engine.connect) or
 [engine.connectToListenServer()](api/engine.connectToListenServer)
   * > Connecting to *address:port*...
