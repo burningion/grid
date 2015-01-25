@@ -23,7 +23,7 @@ _Coming soon_
 * [Game Loop](api/Game_Loop)
 * [List of console commands](api/List_of_console_commands)
 
-### This Week...
+### Changelog for This Week...
 
 <div class="text-muted">
   - Added `lua_dofile` console command  
