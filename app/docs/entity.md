@@ -38,6 +38,11 @@ Methods
 * [`entity:remove()`](api/entity.remove)
 * [`entity:spawn()`](api/entity.spawn)
 
+Members
+-------
+
+* [`entity.networkVars`](api/entity.networkVars)
+
 Callbacks
 ---------
 

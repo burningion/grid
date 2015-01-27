@@ -18,6 +18,14 @@
 * [vector](api/vector)
 
 **Hooks**
+* [onAxisSignin](api/onAxisSignin)
+* [onConnect](api/onConnect)
+* [onDisconnect](api/onDisconnect)
+* [onLoad](api/onLoad)
+* [onPlayerAuthenticated](api/onPlayerAuthenticated)
+* [onPlayerConnect](api/onPlayerConnect)
+* [onPlayerDisconnect](api/onPlayerDisconnect)
+* [onPlayerInitialSpawn](api/onPlayerInitialSpawn)
 
 **Interfaces and Libraries**
 * [axis](api/axis)
