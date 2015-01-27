@@ -12,6 +12,7 @@ Class Members
 Class Methods
 -------------
 
+* [`entity.create()`](api/entity.create)
 * [`entity.drawAll()`](api/entity.drawAll)
 * [`entity.findByClassname()`](api/entity.findByClassname)
 * [`entity.getAll()`](api/entity.getAll)
