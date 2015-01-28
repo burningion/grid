@@ -54,6 +54,7 @@ Methods
 * [`panel:mousepressed()`](api/panel.mousepressed)
 * [`panel:mousereleased()`](api/panel.mousereleased)
 * [`panel:moveToFront()`](api/panel.moveToFront)
+* [`panel:moveToBack()`](api/panel.moveToBack)
 * [`panel:onMouseLeave()`](api/panel.onMouseLeave)
 * [`panel:removeChildren()`](api/panel.removeChildren)
 * [`panel:screenToLocal()`](api/panel.screenToLocal)

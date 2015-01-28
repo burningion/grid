@@ -22,6 +22,8 @@
 * [onConnect](api/onConnect)
 * [onDisconnect](api/onDisconnect)
 * [onLoad](api/onLoad)
+* [onMainMenuActivate](api/onMainMenuActivate)
+* [onMainMenuClose](api/onMainMenuClose)
 * [onPlayerAuthenticated](api/onPlayerAuthenticated)
 * [onPlayerConnect](api/onPlayerConnect)
 * [onPlayerDisconnect](api/onPlayerDisconnect)
@@ -79,3 +81,4 @@
 * [textbox](api/textbox)
 * [textboxautocompleteitemgroup](api/textboxautocompleteitemgroup)
 * [throbber](api/throbber)
+* [viewport](api/viewport)

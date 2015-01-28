@@ -16,6 +16,7 @@ Class Methods
 * [`entity.drawAll()`](api/entity.drawAll)
 * [`entity.findByClassname()`](api/entity.findByClassname)
 * [`entity.getAll()`](api/entity.getAll)
+* [`entity.getByEntIndex()`](api/entity.getByEntIndex)
 
 Constructor
 -----------
