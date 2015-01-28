@@ -37,6 +37,10 @@ angular
         templateUrl: 'views/api.html',
         controller: 'ApiCtrl'
       })
+      .when('/overview', {
+        templateUrl: 'views/overview.html',
+        controller: 'OverviewCtrl'
+      })
       .otherwise({
         redirectTo: '/404'
       });
