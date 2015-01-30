@@ -55,7 +55,7 @@ angular.module('publicApp')
      */
 
     renderer.table = function(header, body) {
-      return '<table class="table table-condensed">' +
+      return '<table class="table">' +
         header +
         body +
       '</table>';
@@ -76,6 +76,10 @@ angular.module('publicApp')
 
       if (text === 'Shared') {
         return '<span class="label label-shared">Shared</span>';
+      }
+
+      if (text === 'Unimplemented') {
+        return '<span class="label label-danger">Unimplemented</span>';
       }
 
       return '<em>' + text + '</em>';
