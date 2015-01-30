@@ -9,12 +9,12 @@ concommand:callback()
     **Usage:** `function( concommand, player, command, argString, argTable )`
   </div>
 
-  | Name         | Description                                        |
-  | ------------ | -------------------------------------------------- |
-  | `concommand` | Concommand object                                  |
-  | `player`     | *Unimplemented* Player who ran the console command |
-  | `argString`  | Argument string                                    |
-  | `argTable`   | Argument table                                     |
+  | Name         | Type       | Description                        |
+  | ------------ | ---------- | ---------------------------------- |
+  | `concommand` | concommand | Concommand object                  |
+  | `player`     | player     | Player who ran the console command |
+  | `argString`  | string     | Argument string                    |
+  | `argTable`   | table      | Argument table                     |
 </div>
 
 Example

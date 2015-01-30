@@ -15,10 +15,10 @@ concommand.dispatch()
     **Returns:** boolean
   </div>
 
-  | Name        | Description                         |
-  | ----------- | ----------------------------------- |
-  | `player`    | Player who ran the console command  |
-  | `name`      | Name of the console command to run  |
-  | `argString` | Argument string to pass to callback |
-  | `argTable`  | Argument table to pass to callback  |
+  | Name        | Type   | Description                         |
+  | ----------- | ------ | ----------------------------------- |
+  | `player`    | player | Player who ran the console command  |
+  | `name`      | string | Name of the console command to run  |
+  | `argString` | string | Argument string to pass to callback |
+  | `argTable`  | table  | Argument table to pass to callback  |
 </div>

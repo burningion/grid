@@ -9,14 +9,14 @@ convar()
     **Usage:** `convar( name, default, min, max, helpString, onValueChange )`
   </div>
 
-  | Name            | Description                                             |
-  | --------------- | ------------------------------------------------------- |
-  | `name`          | Name of the console variable                            |
-  | `default`       | Default value                                           |
-  | `min`           | Minimum value                                           |
-  | `max`           | Maximum value                                           |
-  | `helpString`    | Help text displayed when using the help console command |
-  | `onValueChange` | Callback to run when the console variable has changed   |
+  | Name            | Type     | Description                                             |
+  | --------------- | -------- | ------------------------------------------------------- |
+  | `name`          | string   | Name of the console variable                            |
+  | `default`       | *        | Default value                                           |
+  | `min`           | number   | Minimum value                                           |
+  | `max`           | number   | Maximum value                                           |
+  | `helpString`    | string   | Help text displayed when using the help console command |
+  | `onValueChange` | function | Callback to run when the console variable has changed   |
 </div>
 
 Example

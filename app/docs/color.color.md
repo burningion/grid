@@ -9,12 +9,12 @@ color()
     **Usage:** `color( r, g, b, a )`
   </div>
 
-  | Name      | Description           |
-  | --------- | --------------------- |
-  | `r`       | Red channel (0-255)   |
-  | `g`       | Green channel (0-255) |
-  | `b`       | Blue channel (0-255)  |
-  | `a`       | Alpha channel (0-255) |
+  | Name      | Type   | Description           |
+  | --------- | ------ | --------------------- |
+  | `r`       | number | Red channel (0-255)   |
+  | `g`       | number | Green channel (0-255) |
+  | `b`       | number | Blue channel (0-255)  |
+  | `a`       | number | Alpha channel (0-255) |
 </div>
 
 Example
