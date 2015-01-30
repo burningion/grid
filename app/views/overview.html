@@ -6,9 +6,23 @@
   </head>
   <body>
     <section class="fade">
-      <p class="lead">
-        Coming soon.
-      </p>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>
+            Feature Packed.<br>
+            <small>Add more than just LÖVE to your next game jam.</small>
+          </h1>
+        </div>
+        <div class="col-md-4" data-ng-repeat="feature in features">
+          <h3>
+            {{feature.title}}
+          </h3>
+          <img src="{{feature.image}}">
+          <p>
+            {{feature.description}}
+          </p>
+        </div>
+      </div>
     </section>
   </body>
 </html>
