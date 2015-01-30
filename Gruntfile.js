@@ -80,6 +80,7 @@ module.exports = function (grunt) {
           middleware: function (connect) {
             return [
               modRewrite(['^[^\\.]*$ /index.html [L]']),
+              modRewrite(['^\/grid\/api\/[^\/]*$ /index.html [L]']),
               connect().use(
                 '/grid',
                 connect.static('.tmp')
@@ -103,6 +104,7 @@ module.exports = function (grunt) {
           middleware: function (connect) {
             return [
               modRewrite(['^[^\\.]*$ /index.html [L]']),
+              modRewrite(['^\/grid\/api\/[^\/]*$ /index.html [L]']),
               connect().use(
                 '/grid',
                 connect.static('.tmp')
