@@ -19,7 +19,9 @@ angular.module('publicApp')
           var routeName = $location.path();
           var link      = element.find('a');
           var href      = link.attr('href') || '';
-          if (routeName === href.replace('/grid', '')) {
+          href          = href.replace('/grid', '');
+          if ((routeName === href) ||
+              (href !== '/' && routeName.indexOf(href) === 0)) {
             // set active nav link
             element.addClass('active');
 
