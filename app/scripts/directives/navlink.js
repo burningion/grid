@@ -27,7 +27,9 @@ angular.module('publicApp')
 
             // set nav title
             var navTitle = $document[0].getElementById('nav-title');
-            navTitle.textContent = link.attr('title');
+            if (navTitle) {
+              navTitle.textContent = link.attr('title');
+            }
           } else {
             element.removeClass('active');
           }
