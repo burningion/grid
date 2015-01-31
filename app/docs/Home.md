@@ -22,15 +22,3 @@ _Coming soon_
 * [Client–Server Initialization](api/Client–Server_Initialization)
 * [Game Loop](api/Game_Loop)
 * [List of console commands](api/List_of_console_commands)
-
-### Changelog for This Week…
-
-<div class="text-muted">
-  - Added `lua_dofile` console command  
-  - Implemented entity instantiation and class definition cleanup  
-  - Fixed players initializing incorrectly across client and server  
-  - Added interactive dedicated console  
-  - Implemented network variable synchronization  
-  - Added entity scaling  
-  - Added viewport panel
-</div>
