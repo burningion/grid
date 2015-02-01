@@ -46,6 +46,10 @@
     margin-top: -3px;
     padding-left: 0;
   }
+
+  .row:first-of-type {
+    margin-bottom: 46px;
+  }
 }
 
 @media (min-width: $screen-sm-min) {

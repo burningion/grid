@@ -11,6 +11,7 @@
 angular
   .module('publicApp', [
     'ngRoute',
+    'hljs',
     'hc.marked',
     'ngSanitize'
   ])

@@ -44,7 +44,7 @@ pre {
   border-radius: $border-radius-base;
   color: $pre-color;
   display: block;
-  font-size: ($font-size-base - 2) !important; // 14px to 12px
+  font-size: $font-size-base !important; // 14px to 12px
   line-height: $line-height-base;
   margin: 0 0 ($line-height-computed / 2);
   padding: (($line-height-computed - 2) / 2) !important;
