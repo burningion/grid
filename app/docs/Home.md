@@ -20,6 +20,5 @@ _Coming soon_
 ### Engine Documentation Index
 
 * [Client–Server Initialization](api/Client–Server_Initialization)
-* [Game Loop](api/Game_Loop)
 * [List of console commands](api/List_of_console_commands)
 * [List of console variables](api/List_of_console_variables)

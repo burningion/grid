@@ -14,8 +14,8 @@ listen server context, respectively.
 Connecting to Dedicated Servers
 -------------------------------
 
-In [Vertex Adventure,](/vadventure) the engine connects to the
-[Prime Universe](api/Prime_Universe) in the main menu.
+In [Vertex Adventure,](/vadventure) the engine connects to the Prime Universe in
+the main menu.
 
 `game.client.gui.mainmenu`
 
