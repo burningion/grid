@@ -26,7 +26,7 @@ angular.module('publicApp')
           var tl    = new TimelineMax();
           var h1    = element[0].getElementsByTagName('h1');
           var small = element[0].getElementsByTagName('small');
-          var p     = element[0].getElementsByTagName('p');
+          var p     = element[0].querySelector('#about .row:first-of-type p');
           var btn   = element[0].getElementsByClassName('btn');
           var right = $document[0].getElementById('right');
           tl
