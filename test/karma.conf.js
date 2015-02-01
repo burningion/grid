@@ -32,6 +32,8 @@ module.exports = function(config) {
       'bower_components/angular-scrollto/angular-scrollto.js',
       'bower_components/marked/lib/marked.js',
       'bower_components/angular-marked/angular-marked.js',
+      'bower_components/highlightjs/highlight.pack.js',
+      'bower_components/angular-highlightjs/angular-highlightjs.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js'
