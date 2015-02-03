@@ -44,11 +44,11 @@ angular.module('publicApp')
             .staggerFromTo([p, btn], 0.6, {
                 opacity: 0,
                 rotationX: 90,
-                transformOrigin: '50% 50% -23.5px'
+                transformOrigin: '50% 50% -58px'
               }, {
                 opacity: 1,
                 rotationX: 0,
-                transformOrigin: '50% 50% -23.5px'
+                transformOrigin: '50% 50% -58px'
               }, 0.06, '-=0.4')
             // slide right in
             .fromTo(right, 0.6, {
