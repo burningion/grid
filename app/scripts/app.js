@@ -24,6 +24,13 @@ angular
     $urlRouterProvider.when('/about', '/');
     $urlRouterProvider.otherwise('/404');
 
+    $urlRouterProvider.rule(function($injector, $location) {
+      var path = $location.path();
+      if (path !== '/' && path.slice(-1) === '/') {
+          $location.replace().path(path.slice(0, -1));
+      }
+    });
+
     $stateProvider
       .state('about', {
         url: '/',
