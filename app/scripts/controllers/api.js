@@ -114,7 +114,7 @@ angular.module('publicApp')
     }, function(article) {
       if (!article) { return; }
 
-      $http.get('/docs/' + article + '.md').
+      $http.get('/grid/docs/' + article + '.md').
         success(function(markdown) {
           $scope.article = marked(markdown);
         }).
