@@ -46,6 +46,9 @@ angular
         url: '/:article',
         templateUrl: 'views/api.article.html',
         controller: 'ApiCtrl'
+      })
+      .state('api.article.redirect', {
+        url: '/'
       });
   })
 
