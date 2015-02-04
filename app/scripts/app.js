@@ -53,6 +53,14 @@ angular
   })
 
   /**
+   * Configure URL matcher.
+   */
+
+  .config(function ($urlMatcherFactoryProvider) {
+    $urlMatcherFactoryProvider.strictMode(false);
+  })
+
+  /**
    * Configure application deep linking.
    */
 
