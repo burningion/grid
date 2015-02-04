@@ -28,7 +28,7 @@
             class="fade header">
     </header>
     <main id="{{routeName}}">
-      <div class="main container" data-ui-view="">
+      <div class="main container" data-ng-view="">
       </div>
     </main>
     <footer data-ng-include="'views/partials/footer.html'"
@@ -59,7 +59,7 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/async/lib/async.js"></script>
@@ -72,7 +72,6 @@
     <script src="bower_components/angular-marked/angular-marked.js"></script>
     <script src="bower_components/highlightjs/highlight.pack.js"></script>
     <script src="bower_components/angular-highlightjs/angular-highlightjs.js"></script>
-    <script src="bower_components/reading-time/src/readingTime.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
