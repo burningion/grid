@@ -48,8 +48,7 @@ angular
         controller: 'ApiCtrl'
       })
       .state('api.article.redirect', {
-        url: '/',
-        controller: 'ApiCtrl'
+        url: '/'
       });
   })
 
