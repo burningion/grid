@@ -8,16 +8,7 @@
  * Controller of the publicApp
  */
 angular.module('publicApp')
-  .controller('ApiCtrl', function ($stateParams, $location, $window, marked, $scope, $http) {
-    /**
-     * Redirect /api to /api/Home.
-     */
-
-    // if (!$stateParams.article) {
-    //   $location.path('/api/Home');
-    //   return;
-    // }
-
+  .controller('ApiCtrl', function ($window, marked, $scope, $stateParams, $http) {
     /**
      * Module dependencies.
      */
