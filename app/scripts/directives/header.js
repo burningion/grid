@@ -63,7 +63,9 @@ angular.module('publicApp')
 
         scope.$on('viewLoaded', function() {
           var navTitle = $document[0].getElementById('nav-title');
-          navTitle.textContent = null;
+          if (navTitle) {
+            navTitle.textContent = null;
+          }
         });
       }
     };

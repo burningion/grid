@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>404</title>
-  </head>
-  <body>
-    <section class="api fade row">
-      <div data-marked data-ng-include="'docs/_Sidebar.md'"
-           class="hidden-print hidden-xs hidden-sm col-md-3 col-lg-2">
-        Loading...
-      </div>
-      <div class="col-xs-12 col-md-9 col-lg-10" role="main">
-        <div class="well" data-ng-bind-html="article">
-          This is the api view.
-        </div>
-      </div>
-    </section>
-  </body>
-</html>
+<section class="api fade row">
+  <div data-marked data-ng-include="'/docs/_Sidebar.md'"
+       class="hidden-print hidden-xs hidden-sm col-md-3 col-lg-2">
+    Loading...
+  </div>
+  <div class="col-xs-12 col-md-9 col-lg-10" role="main" data-ui-view>
+  </div>
+</section>
