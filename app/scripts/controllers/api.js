@@ -13,10 +13,10 @@ angular.module('publicApp')
      * Redirect /api to /api/Home.
      */
 
-    if (!$stateParams.article) {
-      $location.path('/api/Home');
-      return;
-    }
+    // if (!$stateParams.article) {
+    //   $location.path('/api/Home');
+    //   return;
+    // }
 
     /**
      * Module dependencies.
