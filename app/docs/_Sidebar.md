@@ -28,6 +28,7 @@
 * [onPlayerConnect](api/onPlayerConnect)
 * [onPlayerDisconnect](api/onPlayerDisconnect)
 * [onPlayerInitialSpawn](api/onPlayerInitialSpawn)
+* [onReload](api/onReload)
 
 **Interfaces and Libraries**
 * [axis](api/axis)
