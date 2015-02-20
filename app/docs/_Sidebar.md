@@ -1,3 +1,16 @@
+**Callbacks**
+* [onAxisSignin](api/onAxisSignin)
+* [onConnect](api/onConnect)
+* [onDisconnect](api/onDisconnect)
+* [onLoad](api/onLoad)
+* [onMainMenuActivate](api/onMainMenuActivate)
+* [onMainMenuClose](api/onMainMenuClose)
+* [onPlayerAuthenticated](api/onPlayerAuthenticated)
+* [onPlayerConnect](api/onPlayerConnect)
+* [onPlayerDisconnect](api/onPlayerDisconnect)
+* [onPlayerInitialSpawn](api/onPlayerInitialSpawn)
+* [onReload](api/onReload)
+
 **Classes**
 * [axisuser](api/axisuser)
 * [color](api/color)
@@ -16,19 +29,6 @@
 * [sprite](api/sprite)
 * [typelenvalues](api/typelenvalues)
 * [vector](api/vector)
-
-**Hooks**
-* [onAxisSignin](api/onAxisSignin)
-* [onConnect](api/onConnect)
-* [onDisconnect](api/onDisconnect)
-* [onLoad](api/onLoad)
-* [onMainMenuActivate](api/onMainMenuActivate)
-* [onMainMenuClose](api/onMainMenuClose)
-* [onPlayerAuthenticated](api/onPlayerAuthenticated)
-* [onPlayerConnect](api/onPlayerConnect)
-* [onPlayerDisconnect](api/onPlayerDisconnect)
-* [onPlayerInitialSpawn](api/onPlayerInitialSpawn)
-* [onReload](api/onReload)
 
 **Interfaces and Libraries**
 * [axis](api/axis)
