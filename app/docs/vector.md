@@ -3,6 +3,11 @@ vector
 
 Vector class
 
+Class Methods
+-------------
+
+* [`vector.copy()`](api/vector.copy)
+
 Constructor
 -----------
 
