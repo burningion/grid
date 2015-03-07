@@ -27,16 +27,23 @@ angular.module('publicApp')
         }
 
         /**
+         * Handle "initialize" event.
+         */
+
+        if ($rootScope.initialized) {
+          requestAnimationFrame(fadeIn);
+        } else {
+          var remove = scope.$on('initialize', function() {
+            remove();
+            requestAnimationFrame(fadeIn);
+          });
+        }
+
+        /**
         * Handle "$stateChangeSuccess" events.
         */
 
         $rootScope.$on('$stateChangeSuccess', fadeIn);
-
-        /**
-         * Handle "$viewContentLoaded" events.
-         */
-
-        scope.$on('$viewContentLoaded', fadeIn);
       }
     };
   });
