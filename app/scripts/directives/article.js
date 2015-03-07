@@ -40,10 +40,10 @@ angular.module('publicApp')
         }
 
         /**
-        * Handle "$stateChangeSuccess" events.
-        */
+         * Handle "$viewContentLoaded" events.
+         */
 
-        $rootScope.$on('$stateChangeSuccess', fadeIn);
+        scope.$on('$viewContentLoaded', fadeIn);
       }
     };
   });
