@@ -27,6 +27,12 @@ angular.module('publicApp')
         }
 
         /**
+        * Handle "$stateChangeSuccess" events.
+        */
+
+        $rootScope.$on('$stateChangeSuccess', fadeIn);
+
+        /**
          * Handle "$viewContentLoaded" events.
          */
 
