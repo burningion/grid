@@ -18,7 +18,6 @@
 * [framebuffer](api/framebuffer)
 * [fullscreenframebuffer](api/fullscreenframebuffer)
 * [networkvar](api/networkvar)
-* [node](api/node)
 * [payload](api/payload)
 * [player](api/player)
 * [region](api/region)
