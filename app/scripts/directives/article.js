@@ -27,10 +27,17 @@ angular.module('publicApp')
         }
 
         /**
-        * Handle "$viewContentLoaded" events.
-        */
+         * Handle "initialize" event.
+         */
 
-        scope.$on('$viewContentLoaded', fadeIn);
+        if ($rootScope.initialized) {
+          requestAnimationFrame(fadeIn);
+        } else {
+          var remove = scope.$on('initialize', function() {
+            remove();
+            requestAnimationFrame(fadeIn);
+          });
+        }
 
         /**
         * Handle "$stateChangeSuccess" events.
