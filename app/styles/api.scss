@@ -53,8 +53,8 @@
     }
   }
 
-  .well p:last-of-type,
-  .well ul:last-of-type {
+  .well p:last-child,
+  .well ul:last-child {
     margin-bottom: 0;
   }
 }
