@@ -56,7 +56,6 @@ angular.module('publicApp')
           }); });
         });
 
-
         /**
          * Handle "viewLoaded" events.
          */
