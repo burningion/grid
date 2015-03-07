@@ -36,7 +36,7 @@ module.exports = function(config) {
       'bower_components/angular-highlightjs/angular-highlightjs.js',
       'bower_components/reading-time/src/readingTime.js',
       'bower_components/angular-loading-bar/build/loading-bar.js',
-      'bower_components/angular-scroll/angular-scroll.js'
+      'bower_components/angular-scroll/angular-scroll.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js'
