@@ -14,7 +14,8 @@ angular
     'hljs',
     'hc.marked',
     'ngSanitize',
-    'angular-loading-bar'
+    'angular-loading-bar',
+    'duScroll'
   ])
 
   /**
@@ -119,4 +120,12 @@ angular
     var TweenLite = $window.TweenLite;
     var Quint     = $window.Quint;
     TweenLite.defaultEase = Quint.easeOut;
+  })
+
+  /**
+   * Default scroll easing.
+   */
+
+  .value('duScrollEasing', function (t) {
+    return 1+(--t)*t*t*t*t;
   });
