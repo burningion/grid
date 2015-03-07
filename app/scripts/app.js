@@ -13,7 +13,8 @@ angular
     'ui.router',
     'hljs',
     'hc.marked',
-    'ngSanitize'
+    'ngSanitize',
+    'angular-loading-bar'
   ])
 
   /**
