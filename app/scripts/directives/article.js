@@ -12,7 +12,7 @@ angular.module('publicApp')
       restrict: 'C',
       link: function postLink(scope, element) {
         /**
-         * Fade in main section.
+         * Fade in article.
          */
 
         function fadeIn() {
@@ -27,23 +27,10 @@ angular.module('publicApp')
         }
 
         /**
-         * Handle "initialize" event.
+         * Handle "$viewContentLoaded" events.
          */
 
-        if ($rootScope.initialized) {
-          requestAnimationFrame(fadeIn);
-        } else {
-          var remove = scope.$on('initialize', function() {
-            remove();
-            requestAnimationFrame(fadeIn);
-          });
-        }
-
-        /**
-        * Handle "$stateChangeSuccess" events.
-        */
-
-        $rootScope.$on('$stateChangeSuccess', fadeIn);
+        scope.$on('$viewContentLoaded', fadeIn);
       }
     };
   });

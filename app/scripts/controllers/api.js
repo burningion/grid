@@ -108,6 +108,7 @@ angular.module('publicApp')
       $http.get('/grid/docs/' + article + '.md').
         success(function(markdown) {
           $scope.article = marked(markdown);
+          $scope.$emit('articleLoaded');
         }).
         error(function() {
           $scope.article = marked('Cannot GET /grid/docs/' + article + '.md');
