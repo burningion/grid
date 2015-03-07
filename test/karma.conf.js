@@ -21,7 +21,7 @@ module.exports = function(config) {
       'bower_components/jquery/dist/jquery.js',
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'bower_components/angular-route/angular-route.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/fastclick/lib/fastclick.js',
       'bower_components/async/lib/async.js',
@@ -34,6 +34,7 @@ module.exports = function(config) {
       'bower_components/angular-marked/angular-marked.js',
       'bower_components/highlightjs/highlight.pack.js',
       'bower_components/angular-highlightjs/angular-highlightjs.js',
+      'bower_components/reading-time/src/readingTime.js',
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
       'test/spec/**/*.js'

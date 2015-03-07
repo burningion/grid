@@ -8,7 +8,7 @@
  * Controller of the publicApp
  */
 angular.module('publicApp')
-  .controller('ApiCtrl', function ($window, marked, $scope, $routeParams, $http) {
+  .controller('ApiCtrl', function ($window, marked, $scope, $stateParams, $http) {
     /**
      * Module dependencies.
      */
@@ -101,11 +101,11 @@ angular.module('publicApp')
      */
 
     $scope.$watch(function() {
-      return $routeParams.article;
+      return $stateParams.article;
     }, function(article) {
-      article = article || 'Home';
+      if (!article) { return; }
 
-      $http.get('docs/' + article + '.md').
+      $http.get('/grid/docs/' + article + '.md').
         success(function(markdown) {
           $scope.article = marked(markdown);
         }).
@@ -127,7 +127,7 @@ angular.module('publicApp')
         return;
       }
 
-      var article = $routeParams.article || 'Home';
+      var article = $stateParams.article;
       $scope.article = marked('Cannot GET /grid/docs/' + article + '.md');
     });
   });

@@ -10,37 +10,61 @@
  */
 angular
   .module('publicApp', [
-    'ngRoute',
+    'ui.router',
     'hljs',
     'hc.marked',
     'ngSanitize'
   ])
 
   /**
-   * Configure routes.
+   * Configure states.
    */
 
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
+  .config(function ($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.when('/about', '/');
+    $urlRouterProvider.otherwise('/404');
+
+    $urlRouterProvider.rule(function($injector, $location) {
+      var path = $location.path();
+      if (path !== '/' && path.slice(-1) === '/') {
+          $location.replace().path(path.slice(0, -1));
+      }
+    });
+
+    $stateProvider
+      .state('about', {
+        url: '/',
         templateUrl: 'views/main.html'
       })
-      .when('/about', {
-        redirectTo: '/'
-      })
-      .when('/theme', {
+      .state('theme', {
+        url: '/theme',
         templateUrl: 'views/theme.html'
       })
-      .when('/404', {
+      .state('404', {
+        url: '/404',
         templateUrl: 'views/404.html'
       })
-      .when('/api/:article?', {
+      .state('api', {
+        url: '/api',
         templateUrl: 'views/api.html',
         controller: 'ApiCtrl'
       })
-      .otherwise({
-        redirectTo: '/404'
+      .state('api.article', {
+        url: '/:article',
+        templateUrl: 'views/api.article.html',
+        controller: 'ApiCtrl'
+      })
+      .state('api.article.redirect', {
+        url: '/'
       });
+  })
+
+  /**
+   * Configure URL matcher.
+   */
+
+  .config(function ($urlMatcherFactoryProvider) {
+    $urlMatcherFactoryProvider.strictMode(false);
   })
 
   /**

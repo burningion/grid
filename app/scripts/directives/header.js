@@ -61,10 +61,10 @@ angular.module('publicApp')
          * Handle "viewLoaded" events.
          */
 
-        scope.$on('viewLoaded', function() {
-          var navTitle = $document[0].getElementById('nav-title');
-          navTitle.textContent = null;
-        });
+        // scope.$on('viewLoaded', function() {
+        //   var navTitle = $document[0].getElementById('nav-title');
+        //   navTitle.textContent = null;
+        // });
       }
     };
   });

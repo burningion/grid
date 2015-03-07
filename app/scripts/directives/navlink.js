@@ -18,7 +18,9 @@ angular.module('publicApp')
         function updateNavLink() {
           var routeName = $location.path();
           var link      = element.find('a');
-          var href      = link.attr('href') || '';
+          var href      = link.attr('href-match') ||
+                          link.attr('href')       ||
+                          '';
           href          = href.replace('/grid', '');
           if ((routeName === href) ||
               (href !== '/' && routeName.lastIndexOf(href, 0) === 0)) {
