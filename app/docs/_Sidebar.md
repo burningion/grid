@@ -1,5 +1,4 @@
 **Callbacks**
-* [onAxisSignin](api/onAxisSignin)
 * [onConnect](api/onConnect)
 * [onDisconnect](api/onDisconnect)
 * [onLoad](api/onLoad)
@@ -12,7 +11,6 @@
 * [onReload](api/onReload)
 
 **Classes**
-* [axisuser](api/axisuser)
 * [color](api/color)
 * [concommand](api/concommand)
 * [convar](api/convar)
@@ -32,7 +30,6 @@
 * [vector](api/vector)
 
 **Interfaces and Libraries**
-* [axis](api/axis)
 * [camera](api/camera)
 * [engine](api/engine)
 * [entities](api/entities)
