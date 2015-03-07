@@ -12,3 +12,16 @@ header .build {
 [data-hljs].snippet code {
   font-size: 14px !important;
 }
+
+#loading-bar .bar {
+  background: $gold;
+}
+
+/* Fancy blur effect */
+#loading-bar .peg {
+  box-shadow: $gold 1px 0 6px 1px;
+}
+
+#loading-bar-spinner {
+  display: none;
+}
