@@ -3,11 +3,6 @@ scheme
 
 A color scheme for Grid's GUI
 
-Class Members
--------------
-
-* [`scheme.schemes`](api/scheme.schemes)
-
 Class Methods
 -------------
 

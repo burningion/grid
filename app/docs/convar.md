@@ -3,12 +3,6 @@ convar
 
 A console variable
 
-Class Members
--------------
-
-* [`convar.config`](api/convar.config)
-* [`convar.convars`](api/convar.convars)
-
 Class Methods
 -------------
 
