@@ -1,6 +1,4 @@
 **Callbacks**
-* [onConnect](api/onConnect)
-* [onDisconnect](api/onDisconnect)
 * [onLoad](api/onLoad)
 * [onMainMenuActivate](api/onMainMenuActivate)
 * [onMainMenuClose](api/onMainMenuClose)
