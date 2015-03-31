@@ -3,11 +3,6 @@ region
 
 Region class
 
-Class Members
--------------
-
-* [`region.regions`](api/region.regions)
-
 Class Methods
 -------------
 

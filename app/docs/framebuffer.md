@@ -3,12 +3,6 @@ framebuffer
 
 Framebuffer class
 
-Class Members
--------------
-
-* [`framebuffer.framebuffers`](api/framebuffer.framebuffers)
-* [`framebuffer.renderStack`](api/framebuffer.renderStack)
-
 Class Methods
 -------------
 

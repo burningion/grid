@@ -3,11 +3,6 @@ concommand
 
 A console command
 
-Class Members
--------------
-
-* [`concommand.concommands`](api/concommand.concommands)
-
 Class Methods
 -------------
 

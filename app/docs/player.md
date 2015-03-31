@@ -34,6 +34,8 @@ Methods
 |           | [`player:initialSpawn()`](api/player.initialSpawn)           |
 |           | [`player:isAuthenticated()`](api/player.isAuthenticated)     |
 | *Server*  | [`player:kick()`](api/player.kick)                           |
+|           | [`player:move()`](api/player.move)                           |
+|           | [`player:moveTo()`](api/player.moveTo)                       |
 |           | [`player:send()`](api/player.send)                           |
 |           | [`player:setAuthenticated()`](api/player.setAuthenticated)   |
 |           | [`player:setRegion()`](api/player.setRegion)                 |

@@ -3,12 +3,6 @@ entity
 
 Entity class
 
-Class Members
--------------
-
-* [`entity.entities`](api/entity.entities)
-* [`entity.lastEntIndex`](api/entity.lastEntIndex)
-
 Class Methods
 -------------
 
