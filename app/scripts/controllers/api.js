@@ -8,7 +8,7 @@
  * Controller of the publicApp
  */
 angular.module('publicApp')
-  .controller('ApiCtrl', function ($window, marked, $scope, $stateParams, $http) {
+  .controller('ApiCtrl', function ($window, marked, $scope, $stateParams, $location, $http) {
     /**
      * Module dependencies.
      */
@@ -103,7 +103,10 @@ angular.module('publicApp')
     $scope.$watch(function() {
       return $stateParams.article;
     }, function(article) {
-      if (!article) { return; }
+      if (!article) {
+        $location.path('/api/Home');
+        return;
+      }
 
       $http.get('/grid/docs/' + article + '.md').
         success(function(markdown) {
