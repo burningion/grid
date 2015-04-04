@@ -13,8 +13,7 @@ describe('Directive: sidebar', function () {
   }));
 
   it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<sidebar></sidebar>');
+    element = angular.element('<div class="sidebar"></div>');
     element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the sidebar directive');
   }));
 });
