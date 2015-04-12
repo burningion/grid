@@ -11,6 +11,7 @@
 angular
   .module('publicApp', [
     'ui.router',
+    'scrollto',
     'hljs',
     'hc.marked',
     'ngSanitize',
@@ -28,7 +29,7 @@ angular
     $urlRouterProvider.rule(function($injector, $location) {
       var path = $location.path();
       if (path !== '/' && path.slice(-1) === '/') {
-          $location.replace().path(path.slice(0, -1));
+        $location.replace().path(path.slice(0, -1));
       }
     });
 
@@ -56,6 +57,19 @@ angular
         controller: 'ApiCtrl'
       })
       .state('api.article.redirect', {
+        url: '/'
+      })
+      .state('tutorials', {
+        url: '/tutorials',
+        templateUrl: 'views/tutorials.html',
+        controller: 'TutorialsCtrl'
+      })
+      .state('tutorials.article', {
+        url: '/:article',
+        templateUrl: 'views/tutorials.article.html',
+        controller: 'TutorialsCtrl'
+      })
+      .state('tutorials.article.redirect', {
         url: '/'
       });
   })
@@ -119,12 +133,4 @@ angular
     var TweenLite = $window.TweenLite;
     var Quint     = $window.Quint;
     TweenLite.defaultEase = Quint.easeOut;
-  })
-
-  /**
-   * Default scroll easing.
-   */
-
-  .value('duScrollEasing', function (t) {
-    return 1+(--t)*t*t*t*t;
   });

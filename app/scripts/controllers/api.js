@@ -43,7 +43,7 @@ angular.module('publicApp')
      * Make lists unstyled.
      */
 
-    renderer.list = function(body, ordered) {
+    renderer.list = function (body, ordered) {
       var tag = ordered ? 'ol' : 'ul';
       return '<' + tag + (tag === 'ul' ? ' class="list-unstyled"' : '') + '>' +
         body +
@@ -54,7 +54,7 @@ angular.module('publicApp')
      * Add Bootstap tables.
      */
 
-    renderer.table = function(header, body) {
+    renderer.table = function (header, body) {
       return '<table class="table">' +
         header +
         body +
@@ -65,7 +65,7 @@ angular.module('publicApp')
      * Add client and server labels.
      */
 
-    renderer.em = function(text) {
+    renderer.em = function (text) {
       if (text === 'Client') {
         return '<span class="label label-client">Client</span>';
       }
@@ -90,7 +90,7 @@ angular.module('publicApp')
      */
 
     marked.setOptions({
-      highlight: function(code) {
+      highlight: function (code) {
         return hljs.highlightAuto(code).value;
       },
       renderer: renderer
@@ -100,20 +100,20 @@ angular.module('publicApp')
      * Retrieve an article.
      */
 
-    $scope.$watch(function() {
+    $scope.$watch(function () {
       return $stateParams.article;
-    }, function(article) {
+    }, function (article) {
       if (!article) {
         $location.path('/api/Home');
         return;
       }
 
       $http.get('/grid/docs/' + article + '.md').
-        success(function(markdown) {
+        success(function (markdown) {
           $scope.article = marked(markdown);
           $scope.$emit('articleLoaded');
         }).
-        error(function() {
+        error(function () {
           $scope.article = marked('Cannot GET /grid/docs/' + article + '.md');
         });
     });
@@ -122,7 +122,7 @@ angular.module('publicApp')
     * Watch "article" changes.
     */
 
-    $scope.$watch('article', function(markdown) {
+    $scope.$watch('article', function (markdown) {
       if (!markdown) {
         return;
       }
