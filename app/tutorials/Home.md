@@ -1,20 +1,37 @@
 Grid Tutorials
 ==============
 
-Welcome to the **Grid Tutorials.**
+<div class="alert alert-info">
+  <p>
+    **Hey Listen!**
+    [Planimeter](/planimeter)'s philosophy on documentation is
+    that if you have to go to a third-party site to learn about a particular
+    piece of software, _it isn't being properly documented by its authors._
+  </p>
+  <p>
+    If we're not explaining how to use a part of our software, please
+    [file an issue](https://github.com/andrewmcwatters/grid/issues) and we'll
+    make sure to provide coverage.
+  </p>
+</div>
 
-**_Basic_** tutorials provide knowledge of Grid engine essentials.
+Welcome to the **Grid Tutorials.** These articles are categorized into four
+groups, and don't need to be read in any particular order after
+[Getting Started.](tutorials/Getting_Started)
 
-**_Intermediate_** tutorials are targeted at game developers with full projects
-in mind.
+## Basic
+Tutorials providing knowledge of Grid engine essentials
 
-**_Advanced_** tutorials explain engine-level implementation details and guide
-you on expanding and modifying the engine to suit your needs.
+## Intermediate
+Tutorials game developers with full projects in mind
 
-Finally,
+## Advanced
+Tutorials explaining engine-level details
 
-**_Commercial_** tutorials help with projects which are projected for commercial
-release, and give insight into polish desirable for your game.
+## Commercial
+Tutorials that give insight into polish for commercial-grade projects
+
+---
 
 If you'd like to become a Grid preceptor, you are welcome to fork the site
 tutorials [here on GitHub](https://github.com/andrewmcwatters/grid) and submit a

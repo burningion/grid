@@ -2,7 +2,7 @@ concommand.dispatch()
 =====================
 
 <div class="alert alert-warning">
-  **Hey! Listen!**
+  **It's dangerous to go alone! Read this.**
   This method is used by the engine and is not meant to be called directly.
 </div>
 
