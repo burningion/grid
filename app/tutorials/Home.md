@@ -3,7 +3,7 @@ Grid Tutorials
 
 <div class="alert alert-info">
   <p>
-    **Hey Listen!**
+    **Hey! Listen!**
     [Planimeter](/planimeter)'s philosophy on documentation is
     that if you have to go to a third-party site to learn about a particular
     piece of software, _it isn't being properly documented by its authors._
