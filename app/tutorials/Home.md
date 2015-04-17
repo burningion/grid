@@ -25,7 +25,7 @@ Tutorials providing knowledge of Grid engine essentials
 
 Intermediate
 ------------
-Tutorials game developers with full projects in mind
+Tutorials aimed at game developers with full projects in mind
 
 Advanced
 --------
