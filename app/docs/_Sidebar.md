@@ -6,6 +6,7 @@
 * [onPlayerConnect](api/onPlayerConnect)
 * [onPlayerDisconnect](api/onPlayerDisconnect)
 * [onPlayerInitialSpawn](api/onPlayerInitialSpawn)
+* [onPlayerSpawn](api/onPlayerSpawn)
 * [onReload](api/onReload)
 
 **Classes**
