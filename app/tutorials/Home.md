@@ -19,22 +19,6 @@ Welcome to the **Grid Tutorials.** These articles are categorized into four
 groups, and don't need to be read in any particular order after
 [Getting Started.](tutorials/Getting_Started)
 
-Basic
------
-Tutorials providing knowledge of Grid engine essentials
-
-Intermediate
-------------
-Tutorials aimed at game developers with full projects in mind
-
-Advanced
---------
-Tutorials explaining engine-level details
-
-Commercial
-----------
-Tutorials that give insight into polish for commercial-grade projects
-
 ---
 
 If you'd like to become a Grid preceptor, you are welcome to fork the site

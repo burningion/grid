@@ -3,9 +3,9 @@ Grid API Documentation
 
 Welcome to the **Grid API Documentation.**
 
-Here you'll find the Lua documentation for the Grid engine. Classes, hooks, and
-interfaces for game development have their references published here and are
-organized by their listing in the engine and game directories.
+Here you'll find the Lua documentation for the Grid engine. Callbacks, classes,
+interfaces, libraries, and panels for game development have their references
+published here.
 
 ### Engine Documentation Index
 
