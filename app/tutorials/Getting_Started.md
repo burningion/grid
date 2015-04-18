@@ -10,7 +10,7 @@ version control for your Grid project yet, you can also just
 [download the zipped project](https://github.com/andrewmcwatters/grid-sdk/archive/master.zip)
 and extract it anywhere.
 
-See Also
---------
+Running Grid
+------------
 
-* [Configure Project](api/Configure_Project)
+On Windows, run `debug game.bat`. On OS X and Linux, run `debug game.sh`.
