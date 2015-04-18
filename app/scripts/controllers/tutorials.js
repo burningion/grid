@@ -104,7 +104,7 @@ angular.module('publicApp')
     return $stateParams.article;
   }, function (article) {
     if (!article) {
-      $location.path('/tutorials/Home');
+      // $location.path('/tutorials/Home');
       return;
     }
 
