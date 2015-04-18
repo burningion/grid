@@ -21,4 +21,6 @@ Some code can be ran on both the client and server. Pathfinding, for instance,
 can be visualized on the client, while the server moves an NPC to a new
 position.
 
-A list of callbacks can be found [here in the API Documentation.](api/Home)
+A list of callbacks can be found [here in the API Documentation.](api/Home) Some
+code in the files above has already been scaffolded for you as a part of the
+sample code for [Vertex Adventure.](/vadventure)
