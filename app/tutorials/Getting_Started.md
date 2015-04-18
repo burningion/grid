@@ -13,7 +13,10 @@ and extract it anywhere.
 Running Grid
 ------------
 
-On Windows, run `debug game.bat`. On OS X and Linux, run `debug game.sh`.
+On Windows, run `debug game.bat`. On OS X and Linux, run `debug game.sh` in your
+terminal by typing <kbd>. "debug game.sh"</kbd> This will start Grid in
+development mode, which enables real-time scripting, preventing you from having
+to restart your game whenever you make changes.
 
 Next
 ----
