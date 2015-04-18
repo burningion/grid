@@ -21,4 +21,4 @@ to restart your game whenever you make changes.
 Next
 ----
 
-[Callbacks](tutorials/callbacks)
+[Callbacks](tutorials/Callbacks)
