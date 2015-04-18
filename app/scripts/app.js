@@ -56,9 +56,6 @@ angular
         templateUrl: 'views/api.article.html',
         controller: 'ApiCtrl'
       })
-      .state('api.article.redirect', {
-        url: '/'
-      })
       .state('tutorials', {
         url: '/tutorials',
         templateUrl: 'views/tutorials.html',
@@ -68,9 +65,6 @@ angular
         url: '/:article',
         templateUrl: 'views/tutorials.article.html',
         controller: 'TutorialsCtrl'
-      })
-      .state('tutorials.article.redirect', {
-        url: '/'
       });
   })
 
