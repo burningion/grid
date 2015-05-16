@@ -3,6 +3,7 @@
 * [onMainMenuActivate](api/onMainMenuActivate)
 * [onMainMenuClose](api/onMainMenuClose)
 * [onPlayerAuthenticated](api/onPlayerAuthenticated)
+* [onPlayerChat](api/onPlayerChat)
 * [onPlayerConnect](api/onPlayerConnect)
 * [onPlayerDisconnect](api/onPlayerDisconnect)
 * [onPlayerInitialSpawn](api/onPlayerInitialSpawn)
