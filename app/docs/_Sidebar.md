@@ -1,5 +1,4 @@
 **Callbacks**
-* [onLoad](api/onLoad)
 * [onMainMenuActivate](api/onMainMenuActivate)
 * [onMainMenuClose](api/onMainMenuClose)
 * [onPlayerAuthenticated](api/onPlayerAuthenticated)
