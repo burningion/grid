@@ -14,8 +14,7 @@ with [Axis](/axis)
     </p>
   </div>
 
-  | Name      | Type   | Description                  |
-  | --------- | ------ | ---------------------------- |
-  | `player`  | player | Player who was authenticated |
-  | `ticket`  | string | Axis ticket                  |
+  | Name     | Type   | Description                  |
+  | -------- | ------ | ---------------------------- |
+  | `player` | player | Player who was authenticated |
 </div>
