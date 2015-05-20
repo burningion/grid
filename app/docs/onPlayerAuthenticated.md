@@ -1,7 +1,7 @@
 onPlayerAuthenticated <small class="pull-right">*Server*</small>
 =====================
 
-The **onPlayerAuthenticated** callback is run once a player has authenticated
+The **onPlayerAuthenticated** callback is ran once a player has authenticated
 with [Axis.](/axis)
 <br>
 <div class="panel panel-info">
