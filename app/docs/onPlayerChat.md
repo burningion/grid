@@ -1,7 +1,8 @@
 onPlayerChat <small class="pull-right">*Shared*</small>
 ============
 
-The **onPlayerChat** callback is ran when a player says something.
+The **onPlayerChat** callback is ran when a player says something, either with
+the <kbd>say</kbd> console command, or in the chat HUD element.
 <br>
 <div class="panel panel-info">
   <div class="panel-heading">
