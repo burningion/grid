@@ -1,4 +1,4 @@
-payload.setHandler() <small>*Shared*</small>
+payload.setHandler() <small class="pull-right">*Shared*</small>
 ====================
 
 Sets a handler function for a given payload struct.
