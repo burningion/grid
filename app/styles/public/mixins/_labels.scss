@@ -1,0 +1,14 @@
+// Labels
+
+@mixin public-label-variant($color) {
+  background-color: transparent !important;
+  border-color: $color;
+  color: $color !important;
+
+  &[href] {
+    &:hover,
+    &:focus {
+      border-color: darken($color, 10%);
+    }
+  }
+}
