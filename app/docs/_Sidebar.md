@@ -1,19 +1,14 @@
-**Callbacks**  
-*Main Menu*
+**Callbacks**
 * [onMainMenuActivate](api/onMainMenuActivate)
 * [onMainMenuClose](api/onMainMenuClose)
-
-*Player*
 * [onPlayerAuthenticated](api/onPlayerAuthenticated)
 * [onPlayerChat](api/onPlayerChat)
 * [onPlayerConnect](api/onPlayerConnect)
 * [onPlayerDisconnect](api/onPlayerDisconnect)
 * [onPlayerInitialSpawn](api/onPlayerInitialSpawn)
 * [onPlayerSpawn](api/onPlayerSpawn)
-
-*Live Reload*
-* [onImageReload](api/onImageReload)
-* [onScriptReload](api/onScriptReload)
+* [onReloadImage](api/onReloadImage)
+* [onReloadScript](api/onReloadScript)
 
 **Classes**
 * [color](api/color)
