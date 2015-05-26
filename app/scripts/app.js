@@ -65,6 +65,11 @@ angular
         url: '/:article',
         templateUrl: 'views/tutorials.article.html',
         controller: 'TutorialsCtrl'
+      })
+      .state('features', {
+        url: '/features',
+        templateUrl: 'views/features.html',
+        controller: 'FeaturesCtrl'
       });
   })
 
