@@ -15,9 +15,7 @@ Grid Tutorials
   </p>
 </div>
 
-Welcome to the **Grid Tutorials.** These articles are categorized into four
-groups, and don't need to be read in any particular order after
-[Getting Started.](tutorials/Getting_Started)
+Welcome to the **Grid Tutorials.**
 
 ---
 
