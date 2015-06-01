@@ -59,7 +59,8 @@
   }
 
   .well p:last-child,
-  .well ul:last-child {
+  .well ul:last-child,
+  .well .panel:last-child {
     margin-bottom: 0;
   }
 }

@@ -9,11 +9,11 @@ concommand()
     **Usage:** `concommand( name, helpString, callback )`
   </div>
 
-  | Name         | Type     | Description                                             |
-  | ------------ | -------- | ------------------------------------------------------- |
-  | `name`       | string   | Name of the console command                             |
-  | `helpString` | string   | Help text displayed when using the help console command |
-  | `callback`   | function | Callback to run when the console command is dispatched  |
+  | Name         | Type     | Description                                                        |
+  | ------------ | -------- | ------------------------------------------------------------------ |
+  | `name`       | string   | Name of the console command                                        |
+  | `helpString` | string   | Help text displayed when using the <kbd>help</kbd> console command |
+  | `callback`   | function | Callback to run when the console command is dispatched             |
 </div>
 
 Example
