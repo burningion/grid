@@ -7,7 +7,7 @@
  * # header
  */
 angular.module('publicApp')
-  .directive('header', function ($timeout, $window, $document) {
+  .directive('header', function ($timeout, $window, $document, $rootScope) {
     /**
      * Module dependencies.
      */
@@ -64,6 +64,43 @@ angular.module('publicApp')
         //   var navTitle = $document[0].getElementById('nav-title');
         //   navTitle.textContent = null;
         // });
+
+        /**
+         * Handle "headerSlideUp" events.
+         */
+
+        scope.$on('headerSlideUp', function() {
+          element.addClass('disabled');
+
+          var tl = new TimelineMax();
+          var logoContainer = $document[0].getElementById('logo-container');
+          tl
+            // wait for route animations
+            .delay(0.6)
+            // slide up header
+            .to(logoContainer, 0.6, {
+              height: 0,
+              opacity: 0,
+              onComplete: function() {
+                element.removeClass('disabled');
+              }
+            });
+        });
+
+        /**
+         * Handle "$stateChangeSuccess" events.
+         */
+
+        $rootScope.$on('$stateChangeSuccess', function() {
+          var tl = new TimelineMax();
+          var logoContainer = $document[0].getElementById('logo-container');
+          tl
+            // slide down header
+            .to(logoContainer, 0.6, {
+              height: 72,
+              opacity: 1
+            });
+        });
       }
     };
   });

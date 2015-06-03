@@ -9,8 +9,14 @@
 header {
   transform: translate3d(0, 0, 0);
 
+  &.disabled {
+    pointer-events: none;
+  }
+
   #logo-container {
-    margin-bottom: 36px;
+    height: 72px;
+    // margin-bottom: 36px;
+    overflow: hidden;
   }
 
   a {
