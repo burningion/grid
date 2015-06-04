@@ -13,7 +13,7 @@ angular.module('publicApp')
      * Slide up header.
      */
 
-    header.slideUp();
+    // header.slideUp();
 
     /**
      * Engine features.

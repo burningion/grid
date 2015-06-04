@@ -69,7 +69,9 @@ angular
       .state('features', {
         url: '/features',
         templateUrl: 'views/features.html',
-        controller: 'FeaturesCtrl'
+        controller: 'FeaturesCtrl',
+        onEnter: function(header) { header.slideUp(); },
+        onExit:  function(header) { header.slideDown(); }
       });
   })
 

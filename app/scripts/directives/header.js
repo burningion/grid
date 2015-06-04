@@ -66,24 +66,25 @@ angular.module('publicApp')
         // });
 
         /**
+         * Initialize timeline.
+         */
+
+        var headerTimeline = new TimelineMax();
+
+        /**
          * Handle "headerSlideUp" events.
          */
 
         scope.$on('headerSlideUp', function() {
-          element.addClass('disabled');
-
-          var tl = new TimelineMax();
           var logoContainer = $document[0].getElementById('logo-container');
-          tl
+          headerTimeline
             // wait for route animations
             .delay(0.6)
             // slide up header
             .to(logoContainer, 0.6, {
               height: 0,
               opacity: 0,
-              onComplete: function() {
-                element.removeClass('disabled');
-              }
+              overwrite: 'all'
             });
         });
 
@@ -91,14 +92,14 @@ angular.module('publicApp')
          * Handle "$stateChangeSuccess" events.
          */
 
-        $rootScope.$on('$stateChangeSuccess', function() {
-          var tl = new TimelineMax();
+        $rootScope.$on('headerSlideDown', function() {
           var logoContainer = $document[0].getElementById('logo-container');
-          tl
+          headerTimeline
             // slide down header
             .to(logoContainer, 0.6, {
               height: 72,
-              opacity: 1
+              opacity: 1,
+              overwrite: 'all'
             });
         });
       }
