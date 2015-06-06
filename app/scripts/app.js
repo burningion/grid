@@ -12,6 +12,7 @@ angular
   .module('publicApp', [
     'ui.router',
     'scrollto',
+    'duScroll',
     'hljs',
     'hc.marked',
     'ngSanitize',
