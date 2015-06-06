@@ -8,7 +8,7 @@
  * Controller of the publicApp
  */
 angular.module('publicApp')
-  .controller('ApiCtrl', function ($window, marked, $scope, $stateParams, $location, $http) {
+  .controller('ApiCtrl', function ($window, marked, $scope, $stateParams, $location, $http, $document) {
     /**
      * Module dependencies.
      */
@@ -112,6 +112,7 @@ angular.module('publicApp')
         success(function (markdown) {
           $scope.article = marked(markdown);
           $scope.$emit('articleLoaded');
+          angular.element($document).scrollTop(0);
         }).
         error(function () {
           $scope.article = marked('Cannot GET /grid/docs/' + article + '.md');

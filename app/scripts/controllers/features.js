@@ -8,13 +8,7 @@
  * Controller of the publicApp
  */
 angular.module('publicApp')
-  .controller('FeaturesCtrl', function ($scope, header) {
-    /**
-     * Slide up header.
-     */
-
-    // header.slideUp();
-
+  .controller('FeaturesCtrl', function ($scope) {
     /**
      * Engine features.
      */
