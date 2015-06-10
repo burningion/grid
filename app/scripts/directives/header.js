@@ -1,3 +1,4 @@
+/*jshint newcap: false */
 'use strict';
 
 /**
@@ -57,15 +58,6 @@ angular.module('publicApp')
         });
 
         /**
-         * Handle "viewLoaded" events.
-         */
-
-        // scope.$on('viewLoaded', function() {
-        //   var navTitle = $document[0].getElementById('nav-title');
-        //   navTitle.textContent = null;
-        // });
-
-        /**
          * Initialize timeline.
          */
 
@@ -89,10 +81,10 @@ angular.module('publicApp')
         });
 
         /**
-         * Handle "$stateChangeSuccess" events.
+         * Handle "headerSlideDown" events.
          */
 
-        $rootScope.$on('headerSlideDown', function() {
+        scope.$on('headerSlideDown', function() {
           var logoContainer = $document[0].getElementById('logo-container');
           headerTimeline
             // slide down header
