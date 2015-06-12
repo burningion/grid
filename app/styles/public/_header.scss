@@ -63,6 +63,13 @@ header {
     }
   }
 
+  #states-nested {
+    height: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+
   li {
     border-top: 1px solid rgba(0, 0, 0, 0);
     margin-right: $line-height-computed;
@@ -79,13 +86,27 @@ header {
       transform: translateY(calc(-17px + -18px));
       transition-property: color;
     }
-  }
 
-  .active {
-    border-top: 1px solid $gold;
-
-    a {
+    a:active {
       color: $gold;
+    }
+
+    &.active a {
+      color: $gold;
+    }
+
+    &.nav-link.active {
+      border-top: 1px solid $gold;
+    }
+
+    &.nav-link-nested {
+      overflow: visible;
+
+      a {
+        font-size: 24px;
+        font-weight: 100;
+        transform: translateY(calc(-28px + -18px));
+      }
     }
   }
 
