@@ -9,7 +9,7 @@
  * Service in the publicApp.
  */
 angular.module('publicApp')
-  .service('header', function ($rootScope, $window) {
+  .service('header', function ($rootScope, $timeout, $window) {
     /**
      * Module dependencies.
      */
@@ -45,7 +45,10 @@ angular.module('publicApp')
 
     this.setNestedStates = function(states) {
       self.nestedStates = states;
-      $rootScope.$broadcast('headerStateChange', states);
+
+      $timeout(function() {
+        $rootScope.$broadcast('headerStateChange', states);
+      });
     };
 
     /**
