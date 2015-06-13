@@ -68,6 +68,10 @@ header {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
+
+    &:empty {
+      height: 0;
+    }
   }
 
   li {
