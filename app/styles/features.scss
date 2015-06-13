@@ -1,0 +1,27 @@
+//
+// Features
+// --------------------------------------------------
+
+
+// Core variables
+@import 'public/variables';
+
+
+// Base styles
+// -------------------------
+
+.features {
+  h1 {
+    font-weight: 300;
+    margin-bottom: 36px;
+    margin-top: 0;
+
+    small {
+      font-weight: 100;
+    }
+  }
+
+  .hero {
+    box-shadow: 0 14px 36px rgba(0, 0, 0, .14);
+  }
+}

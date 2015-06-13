@@ -81,7 +81,8 @@ angular
       })
       .state('features.feature', {
         url: '/:feature',
-        templateUrl: 'views/features.feature.html'
+        templateUrl: 'views/features.feature.html',
+        controller: 'FeatureCtrl'
       });
   })
 

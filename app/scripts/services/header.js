@@ -1,3 +1,4 @@
+/*jshint newcap: false */
 'use strict';
 
 /**
@@ -8,7 +9,13 @@
  * Service in the publicApp.
  */
 angular.module('publicApp')
-  .service('header', function ($rootScope) {
+  .service('header', function ($rootScope, $window) {
+    /**
+     * Module dependencies.
+     */
+
+    var Lazy = $window.Lazy;
+
     /**
      * Header.
      */
@@ -37,6 +44,18 @@ angular.module('publicApp')
      */
 
     this.setNestedStates = function(states) {
+      self.nestedStates = states;
       $rootScope.$broadcast('headerStateChange', states);
+    };
+
+    /**
+     * Get nested state by URL.
+     */
+
+    this.getNestedStateByUrl = function(url) {
+      return Lazy(self.nestedStates)
+        .find(function(state) {
+          return state.href === url;
+        });
     };
   });
