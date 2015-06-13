@@ -13,7 +13,8 @@ angular.module('publicApp')
      */
 
     var RoughEase = $window.RoughEase;
-    var Quint     = $window.Quint;
+    // var Quint  = $window.Quint;
+    var Linear    = $window.Linear;
     var TweenMax  = $window.TweenMax;
 
     return {
@@ -48,12 +49,13 @@ angular.module('publicApp')
 
             // configure grid flicker
             var flickerOutGrid = RoughEase.ease.config({
-              strength: getRandomInt(1, 16 + 1),
-              points: getRandomInt(20, 80 + 1),
-              template: Quint.easeOut
+              strength: 16,
+              taper: 'out',
+              clamp: true,
+              template: Linear.easeNone
             });
 
-            TweenMax.fromTo(a[i], 0.45, {
+            TweenMax.fromTo(a[i], 0.6, {
               opacity: 0
             }, {
               opacity: 1,
