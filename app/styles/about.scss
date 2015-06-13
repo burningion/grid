@@ -45,6 +45,10 @@
     margin-top: $line-height-computed;
   }
 
+  p {
+    margin-bottom: 18px;
+  }
+
   a {
     transition-property: background-color,
                          border-color,

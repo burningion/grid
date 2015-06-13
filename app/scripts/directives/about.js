@@ -26,8 +26,7 @@ angular.module('publicApp')
           var tl    = new TimelineMax();
           var h1    = element[0].getElementsByTagName('h1');
           var small = element[0].getElementsByTagName('small');
-          var p     = element[0].querySelector('#about .row:first-of-type p');
-          var btn   = element[0].getElementsByClassName('btn');
+          var p     = element[0].querySelectorAll('#about .row:first-of-type p');
           var right = $document[0].getElementById('right');
           tl
             // wait for main to stagger in
@@ -41,14 +40,14 @@ angular.module('publicApp')
                 y: 0
               }, 0.06)
             // rotate in paragraph and call to action
-            .staggerFromTo([p, btn], 0.6, {
+            .staggerFromTo(p, 0.6, {
                 opacity: 0,
                 rotationX: 90,
-                transformOrigin: '50% 50% -58px'
+                transformOrigin: '50% 50% -36px'
               }, {
                 opacity: 1,
                 rotationX: 0,
-                transformOrigin: '50% 50% -58px'
+                transformOrigin: '50% 50% -36px'
               }, 0.06, '-=0.4')
             // slide right in
             .fromTo(right, 0.6, {
@@ -57,7 +56,7 @@ angular.module('publicApp')
               }, {
                 opacity: 1,
                 x: 0
-              }, '-=0.6');
+              }, '-=0.66');
         }
 
         /**
