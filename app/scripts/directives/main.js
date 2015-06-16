@@ -27,14 +27,14 @@ angular.module('publicApp')
         }
 
         /**
-        * Handle "initialize" events.
-        */
+         * Handle "initialize" events.
+         */
 
         scope.$on('initialize', fadeIn);
 
         /**
-        * Handle "viewLoaded" events.
-        */
+         * Handle "viewLoaded" events.
+         */
 
         scope.$on('viewLoaded', fadeIn);
       }
