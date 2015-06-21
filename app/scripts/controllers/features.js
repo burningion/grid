@@ -38,11 +38,6 @@ angular.module('publicApp')
         name: 'Live Reloading',
         href: '/features/Live_Reloading',
         include: 'views/features/livereloading.html'
-      },
-      {
-        name: 'Level Streaming',
-        href: '/features/Level_Streaming',
-        include: 'views/features/levelstreaming.html'
       }
     ];
 
