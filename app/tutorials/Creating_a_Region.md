@@ -21,7 +21,7 @@ click *OK* or press <kbd>enter</kbd> to use the default settings.
 Next, we'll import Vertex Adventure's *World* tileset by clicking *Map > Add
 External Tileset...* and selecting `World.tsx` from `src/regions`.
 
-![Add External Tileset](images/add_external_tileset.8f8602c5.png)
+![Add External Tileset](images/add_external_tileset.e22ff6c9.png)
 
 Then, we can rename the `Tile Layer 1` layer to `Grass`, and fill our first
 layer with the grass tile from the *World* tileset we added earlier. To fill
