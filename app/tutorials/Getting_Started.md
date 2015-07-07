@@ -19,12 +19,11 @@ Start a Game/Server
 -------------------
 
 In debug mode, the console will be opened on load for you automatically. From
-here, type <kbd>region teffeld</kbd> and hit <kbd>enter</kbd> to start a listen
-server with *Teffeld** as the starting region.
+here, type <kbd>region allorova</kbd> and hit <kbd>enter</kbd> to start a listen
+server with *Allorova** as the starting region.
 
-*Teffeld* is a region in the game [Vertex Adventure](/vadventure), which is
-bundled with Grid as sample code. In a future update, a test region will be
-included.
+*Allorova* is a region in the game [Vertex Adventure](/vadventure), which is
+bundled with Grid as sample code.
 
 Next
 ----
