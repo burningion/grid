@@ -15,7 +15,6 @@ angular
     'duScroll',
     'hljs',
     'hc.marked',
-    'ngSanitize',
     'angular-loading-bar'
   ])
 

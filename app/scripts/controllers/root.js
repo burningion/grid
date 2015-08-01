@@ -44,7 +44,6 @@ angular.module('publicApp')
       };
     }
 
-
     /**
      * Handle "load" events.
      */
