@@ -6,7 +6,7 @@ or stand alone. In this tutorial, we'll create the test region, *Teffeld*, from
 [Vertex Adventure.](/vadventure) The name comes from a medieval-sounding
 abbreviation of "test field."
 
-![Teffeld](images/teffeld.a3a73de3.png)
+![Teffeld](images/teffeld.4d5da0c2.png)
 
 Using Tiled
 -----------
@@ -16,25 +16,25 @@ exported Lua files. To create a region, download and install Tiled, then
 create a new map by clicking *File > New...* or pressing <kbd>Ctrl+N</kbd> then
 click *OK* or press <kbd>enter</kbd> to use the default settings.
 
-![New Map](images/new_map.92a0c7b3.png)
+![New Map](images/new_map.7ce502cb.png)
 
 Next, we'll import Vertex Adventure's *World* tileset by clicking *Map > Add
 External Tileset...* and selecting `World.tsx` from `src/regions`.
 
-![Add External Tileset](images/add_external_tileset.d8385e31.png)
+![Add External Tileset](images/add_external_tileset.29b6d971.png)
 
 Then, we can rename the `Tile Layer 1` layer to `Grass`, and fill our first
 layer with the grass tile from the *World* tileset we added earlier. To fill
 this layer, select the *Bucket Fill Tool* or press <kbd>f</kbd>, click on the
 grass tile, then click anywhere on the map.
 
-![Grass](images/grass.6261b653.png)
+![Grass](images/grass.20f7ddea.png)
 
 We'll need somewhere to spawn. In the sample code for Vertex Adventure,
 players spawn at `prop_worldgate_spawn` entities. So we'll create an *object
 layer* for this and name it *"Spawn Points."*
 
-![Add Object Layer](images/add_object_layer.fe5d0e3b.png)
+![Add Object Layer](images/add_object_layer.d05ae0a2.png)
 
 Finally, we can place a `prop_worldgate_spawn` and test our region in the
 engine. To place an entity, make sure an object layer is
@@ -51,7 +51,7 @@ Lastly, in the *Properties* window set the object's *Type* to
 World Gate's position is at the center of the region, so its position would be
 `(1600.00, 1504.00)`.
 
-![prop_worldgate_spawn](images/prop_worldgate_spawn.43deae09.png)
+![prop_worldgate_spawn](images/prop_worldgate_spawn.ab976858.png)
 
 To save and test our region, we'll save our Tiled map file first by clicking
 *File > Save*, or pressing <kbd>Ctrl+S</kbd> and naming it `teffeld`. Then, to
@@ -65,5 +65,5 @@ Now you can open Grid in development mode (as mentioned under *Running Grid* in
 [Getting Started](tutorials/Getting_Started)) and type <kbd>region teffeld</kbd>
 and press <kbd>enter</kbd> to start a listen server with *Teffeld*.
 
-![Debug Game](images/debug_game.d582edc9.png)
-![Debug Game (2)](images/debug_game%202.f8e8a684.png)
+![Debug Game](images/debug_game.5f3552c8.png)
+![Debug Game (2)](images/debug_game%202.aca3691a.png)
