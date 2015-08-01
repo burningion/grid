@@ -1,7 +1,7 @@
 // Karma configuration
 // http://karma-runner.github.io/0.12/config/configuration-file.html
-// Generated on 2014-12-09 using
-// generator-karma 0.8.3
+// Generated on 2015-08-01 using
+// generator-karma 1.0.0
 
 module.exports = function(config) {
   'use strict';
@@ -14,13 +14,17 @@ module.exports = function(config) {
     basePath: '../',
 
     // testing framework to use (jasmine/mocha/qunit/...)
-    frameworks: ['jasmine'],
+    // as well as any additional frameworks (requirejs/chai/sinon/...)
+    frameworks: [
+      "jasmine"
+    ],
 
     // list of files / patterns to load in the browser
     files: [
+      // bower:js
       'bower_components/jquery/dist/jquery.js',
       'bower_components/angular/angular.js',
-      'bower_components/angular-mocks/angular-mocks.js',
+      'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/fastclick/lib/fastclick.js',
@@ -36,13 +40,16 @@ module.exports = function(config) {
       'bower_components/highlightjs/highlight.pack.js',
       'bower_components/angular-highlightjs/angular-highlightjs.js',
       'bower_components/angular-loading-bar/build/loading-bar.js',
-      'app/scripts/**/*.js',
-      'test/mock/**/*.js',
-      'test/spec/**/*.js'
+      'bower_components/angular-mocks/angular-mocks.js',
+      // endbower
+      "app/scripts/**/*.js",
+      "test/mock/**/*.js",
+      "test/spec/**/*.js"
     ],
 
     // list of files / patterns to exclude
-    exclude: [],
+    exclude: [
+    ],
 
     // web server port
     port: 8080,
@@ -56,13 +63,13 @@ module.exports = function(config) {
     // - PhantomJS
     // - IE (only Windows)
     browsers: [
-      'PhantomJS'
+      "PhantomJS"
     ],
 
     // Which plugins to enable
     plugins: [
-      'karma-phantomjs-launcher',
-      'karma-jasmine'
+      "karma-phantomjs-launcher",
+      "karma-jasmine"
     ],
 
     // Continuous Integration mode
