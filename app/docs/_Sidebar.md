@@ -30,6 +30,7 @@
 
 **Interfaces and Libraries**
 * [camera](api/camera)
+* [chat](api/chat)
 * [engine](api/engine)
 * [entities](api/entities)
 * [filesystem](api/filesystem)
