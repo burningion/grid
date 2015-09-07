@@ -19,6 +19,7 @@ Members
 * [`gui.zIteration`](api/gui.zIteration)
 * [`gui.focusedPanel`](api/gui.focusedPanel)
 * [`gui.viewportFramebuffer`](api/gui.viewportFramebuffer)
+* [`gui.blurFramebuffer`](api/gui.blurFramebuffer)
 
 Callbacks
 ---------
