@@ -1,7 +1,7 @@
 **Callbacks**
 * [onMainMenuActivate](api/onMainMenuActivate)
 * [onMainMenuClose](api/onMainMenuClose)
-* [onNPCSpawn](api/onPlayerSpawn)
+* [onNPCSpawn](api/onNPCSpawn)
 * [onPlayerAuthenticated](api/onPlayerAuthenticated)
 * [onPlayerChat](api/onPlayerChat)
 * [onPlayerConnect](api/onPlayerConnect)
