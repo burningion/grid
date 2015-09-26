@@ -39,3 +39,8 @@ Metamethods
 -----------
 
 * [`regiontileset:__tostring()`](api/regiontileset.__tostring)
+
+See Also
+--------
+
+* [List of tile properties](api/List_of_tile_properties)
