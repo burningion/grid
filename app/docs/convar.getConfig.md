@@ -7,10 +7,12 @@ Returns a table of convar names and values from `cfg/config.cfg`.
     <h3 class="panel-title">Parameters</h3>
   </div>
   <div class="panel-body">
-    **Usage:** `convar.getConfig()`  
-    **Returns:** convar
+    <p>
+      **Usage:** `convar.getConfig()`  
+      **Returns:** convar
+    </p>
+    <p>
+      No Parameters
+    </p>
   </div>
-  <p>
-    No Parameters
-  </p>
 </div>
