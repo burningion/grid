@@ -15,8 +15,8 @@ Members
 Methods
 -------
 
-| Universe  | Methods                                                            |
-| --------- | ------------------------------------------------------------------ |
+| Universe  | Methods                                                                |
+| --------- | ---------------------------------------------------------------------- |
 | *Client*  | [`network.connect()`](api/network.connect)                             |
 | *Client*  | [`network.connectToListenServer()`](api/network.connectToListenServer) |
 | *Client*  | [`network.disconnect()`](api/network.disconnect)                       |
