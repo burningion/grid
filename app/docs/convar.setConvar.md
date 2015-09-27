@@ -1,7 +1,7 @@
 convar.setConvar()
 ==================
 
-Sets a console variable. If the console variable exists, 'convar.setConvar()'
+Sets a console variable. If the console variable exists, `convar.setConvar()`
 returns true.
 <div class="panel panel-info">
   <div class="panel-heading">
