@@ -82,6 +82,7 @@ body {
 main {
   display: flex !important;
   flex: 1;
+  overflow: hidden;
   transform: translate3d(0, 0, 0);
 
   > .container {
