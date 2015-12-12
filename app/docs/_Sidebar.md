@@ -30,6 +30,7 @@
 * [vector](api/vector)
 
 **Interfaces and Libraries**
+* [addon](api/addon)
 * [camera](api/camera)
 * [chat](api/chat)
 * [engine](api/engine)
