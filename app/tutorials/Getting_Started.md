@@ -19,7 +19,7 @@ Start a Game/Server
 -------------------
 
 In debug mode, the console will be opened on load for you automatically. From
-here, type <kbd>region allorova</kbd> and hit <kbd>enter</kbd> to start a listen
+here, type <kbd>region test_01</kbd> and hit <kbd>enter</kbd> to start a listen
 server with *Allorova** as the starting region.
 
 *Allorova* is a region in the game [Vertex Adventure](/vadventure), which is
