@@ -56,33 +56,6 @@ angular
         url: '/:article',
         templateUrl: 'views/api.article.html',
         controller: 'ApiCtrl'
-      })
-      .state('tutorials', {
-        url: '/tutorials',
-        templateUrl: 'views/tutorials.html',
-        controller: 'TutorialsCtrl'
-      })
-      .state('tutorials.article', {
-        url: '/:article',
-        templateUrl: 'views/tutorials.article.html',
-        controller: 'TutorialsCtrl'
-      })
-      .state('features', {
-        url: '/features',
-        templateUrl: 'views/features.html',
-        controller: 'FeaturesCtrl',
-        onEnter: function(header) {
-          header.slideUp();
-        },
-        onExit:  function(header) {
-          header.slideDown();
-          header.setNestedStates(null);
-        }
-      })
-      .state('features.feature', {
-        url: '/:feature',
-        templateUrl: 'views/features.feature.html',
-        controller: 'FeatureCtrl'
       });
   })
 

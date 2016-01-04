@@ -15,12 +15,6 @@
       <p>
         <a class="btn btn-primary btn-lg" href="https://github.com/Planimeter/grid-sdk/releases">Download on GitHub</a>
       </p>
-      <p>
-        <strong>Threads</strong><br>
-        <a href="http://love2d.org/forums/viewtopic.php?f=5&t=80115">LÖVE Forums</a>,
-        <a href="http://forums.tigsource.com/index.php?topic=49608.0">TIGSource</a>,
-        <a href="https://www.reddit.com/r/gamedev/comments/3ffm4t/grid_v201_now_available_introducing_level/">/r/gamedev</a>
-      </p>
     </div>
     <div id="right" class="hidden-xs hidden-sm col-md-6 text-right">
       <a href="images/grid_engine.png" target="_blank">
@@ -45,6 +39,7 @@ class "health" ( gui.panel )
 
 function health:draw()
 	graphics.print( localplayer:getHealth() )
+	gui.panel.draw( self )
 end</div>
       </p>
       <p>
@@ -55,6 +50,7 @@ end</div>
 class "monster" ( npc )
 
 function monster:monster()
+	npc.npc( self )
 	self:setSprite( "images/monster.png" )
 end</div>
       </p>
@@ -63,7 +59,8 @@ end</div>
           Playing a sound from an entity
         </h3>
         <div data-hljs="" data-language="lua" class="snippet">
-function monster:takeDamage()
+function monster:onTakeDamage()
+	npc.onTakeDamage( self )
 	self:emitSound( "sounds/cry.wav" )
 end</div>
       </p>
